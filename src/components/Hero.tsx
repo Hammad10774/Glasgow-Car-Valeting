@@ -80,15 +80,15 @@ export function Hero() {
       <motion.div 
         animate={{ scale: [1, 1.15, 1] }}
         transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute bottom-8 right-8 lg:bottom-12 lg:right-12 z-20 hidden sm:flex"
+        className="absolute bottom-4 right-4 sm:bottom-8 sm:right-8 lg:bottom-12 lg:right-12 z-20 flex"
       >
         <div 
-          className="flex flex-col items-start justify-center px-10 py-8 bg-transparent"
+          className="flex flex-col items-start justify-center px-6 py-4 sm:px-10 sm:py-8 bg-transparent"
         >
-          <span className="text-primary font-heading italic font-medium text-6xl leading-none mb-3">
+          <span className="text-primary font-heading italic font-medium text-4xl sm:text-6xl leading-none mb-1 sm:mb-3">
             100%
           </span>
-          <span className="text-gray-400 font-bold tracking-[0.3em] uppercase text-[10px]">
+          <span className="text-gray-400 font-bold tracking-[0.2em] sm:tracking-[0.3em] uppercase text-[8px] sm:text-[10px]">
             Mobile Service
           </span>
         </div>

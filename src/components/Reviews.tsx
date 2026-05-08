@@ -116,24 +116,24 @@ export function Reviews() {
       <div className="absolute inset-y-0 left-2 md:left-12 flex items-center z-30">
         <button 
           onClick={handlePrev}
-          className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-white text-black flex items-center justify-center hover:bg-gray-200 transition-colors shadow-xl"
+          className="w-10 h-10 md:w-14 md:h-14 rounded-full bg-white text-black flex items-center justify-center hover:bg-gray-200 transition-colors shadow-xl"
           aria-label="Previous Review"
         >
-          <ArrowLeft size={28} />
+          <ArrowLeft size={24} className="md:w-7 md:h-7" />
         </button>
       </div>
       
       <div className="absolute inset-y-0 right-2 md:right-12 flex items-center z-30">
         <button 
           onClick={handleNext}
-          className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-white text-black flex items-center justify-center hover:bg-gray-200 transition-colors shadow-xl"
+          className="w-10 h-10 md:w-14 md:h-14 rounded-full bg-white text-black flex items-center justify-center hover:bg-gray-200 transition-colors shadow-xl"
           aria-label="Next Review"
         >
-          <ArrowRight size={28} />
+          <ArrowRight size={24} className="md:w-7 md:h-7" />
         </button>
       </div>
 
-      <div className="w-full relative h-[750px] sm:h-[650px] md:h-[600px] flex items-center justify-center">
+      <div className="w-full relative h-[850px] sm:h-[750px] md:h-[600px] flex items-center justify-center">
         <AnimatePresence initial={false} custom={direction}>
           <motion.div 
             key={currentIndex}

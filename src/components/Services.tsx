@@ -150,12 +150,12 @@ export function Services() {
           >
             {services.map((service, index) => (
               <motion.div
-                key={index}
+                key={service.title}
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="relative flex-none w-[320px] sm:w-[360px] h-[480px] rounded-2xl overflow-hidden snap-start group cursor-pointer"
+                className="relative flex-none w-[280px] sm:w-[320px] md:w-[360px] h-[480px] rounded-2xl overflow-hidden snap-start group cursor-pointer"
               >
                 {/* Background Image */}
                 <div 
