@@ -17,7 +17,7 @@ export function Footer() {
             
             <div className="flex flex-col">
               <span className="text-[9px] uppercase tracking-widest opacity-40 mb-2">Inquiries</span>
-              <a href="tel:01415550199" className="text-xs tracking-wider text-white hover:text-primary transition-colors">0141 555 0199</a>
+              <a href="tel:07435740502" className="text-xs tracking-wider text-white hover:text-primary transition-colors">0743 574 0502</a>
             </div>
             
             <div className="flex flex-col">

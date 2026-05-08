@@ -43,7 +43,7 @@ export function Hero() {
               </a>
               <div className="flex flex-col">
                 <span className="text-[10px] uppercase tracking-widest opacity-50">Inquiries</span>
-                <span className="text-sm font-medium text-white hover:text-primary transition-colors cursor-pointer">0141 555 0199</span>
+                <a href="tel:07435740502" className="text-sm font-medium text-white hover:text-primary transition-colors cursor-pointer">0743 574 0502</a>
               </div>
             </div>
 
