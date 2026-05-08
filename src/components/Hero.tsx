@@ -7,7 +7,7 @@ export function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&q=80"
+          src="/hero-car-edited.jpg"
           alt="Car Detailing"
           className="w-full h-full object-cover"
         />
@@ -15,13 +15,13 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-background-dark via-background-dark/90 to-background-dark/30" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10 w-full pt-12 pb-24 border-l border-[var(--color-border-dark)] h-full">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10 w-full pt-12 pb-24 h-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="flex flex-col justify-center lg:pr-12 lg:border-r border-[var(--color-border-dark)] py-12"
+            className="flex flex-col justify-center lg:pr-12 py-12"
           >
             <p className="text-[10px] uppercase tracking-widest text-primary block mb-6 font-medium">
               Vapor Auto Detailing
@@ -75,6 +75,24 @@ export function Hero() {
           </motion.div>
         </div>
       </div>
+
+      {/* 100% Mobile Service Badge */}
+      <motion.div 
+        animate={{ scale: [1, 1.15, 1] }}
+        transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute bottom-8 right-8 lg:bottom-12 lg:right-12 z-20 hidden sm:flex"
+      >
+        <div 
+          className="flex flex-col items-start justify-center px-10 py-8 bg-transparent"
+        >
+          <span className="text-primary font-heading italic font-medium text-6xl leading-none mb-3">
+            100%
+          </span>
+          <span className="text-gray-400 font-bold tracking-[0.3em] uppercase text-[10px]">
+            Mobile Service
+          </span>
+        </div>
+      </motion.div>
     </div>
   );
 }

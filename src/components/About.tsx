@@ -4,7 +4,7 @@ import { CheckCircle2 } from "lucide-react";
 export function About() {
   return (
     <section className="py-24 bg-background-light border-y border-[var(--color-border-dark)] overflow-hidden" id="about">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 border-l border-[var(--color-border-dark)]">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -49,7 +49,7 @@ export function About() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative lg:pl-12 lg:border-l border-[var(--color-border-dark)] h-full flex flex-col justify-center"
+            className="relative lg:pl-12 h-full flex flex-col justify-center"
           >
                <div className="relative w-5/6 ml-auto my-8">
                  <img 

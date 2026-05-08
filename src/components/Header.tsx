@@ -16,10 +16,11 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
-            <a href="/" className="flex flex-col">
+            <a href="/" className="flex flex-col relative z-10">
               <span className="text-2xl font-heading italic tracking-widest text-primary">GLASGOW</span>
               <span className="text-xs font-sans tracking-[0.3em] uppercase opacity-60 -mt-1">Car Valeting</span>
             </a>
+            <img src="/fox-logo.png" alt="Fox Logo" className="h-16 w-auto object-contain -ml-2 -mt-2 transform scale-110" />
           </div>
 
           <nav className="hidden md:flex flex-1 justify-center space-x-10">
