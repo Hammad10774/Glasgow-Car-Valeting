@@ -164,7 +164,7 @@ export function Services() {
                 />
                 
                 {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-black/10 group-hover:from-black/95 group-hover:via-black/80 transition-all duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/80 md:via-black/40 to-black/10 md:group-hover:from-black/95 md:group-hover:via-black/80 transition-all duration-300" />
 
                 {/* Top Right Red Arrow Button */}
                 <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-[#ff0000] text-white flex items-center justify-center shadow-lg transform transition-transform group-hover:scale-110">
@@ -173,12 +173,12 @@ export function Services() {
 
                 {/* Content at the bottom */}
                 <div className="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end h-full">
-                  <div className="transform transition-transform duration-500 translate-y-24 group-hover:translate-y-0">
+                  <div className="transform transition-transform duration-500 translate-y-0 md:translate-y-24 md:group-hover:translate-y-0">
                     <h3 className="text-2xl font-black text-white uppercase tracking-wider mb-2 leading-tight">
                       {service.title}
                     </h3>
                     
-                    <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                    <div className="opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 delay-100">
                       <p className="text-white/80 text-sm leading-relaxed mb-4">
                         {service.description}
                       </p>
