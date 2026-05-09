@@ -28,7 +28,7 @@ export function Hero() {
             </p>
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-heading leading-[0.9] mb-8 text-white">
               Glasgow's Leader in<br />
-              <span className="italic text-primary">Mobile Detailing.</span>
+              <span className="italic text-primary">Mobile Valeting & Detailing.</span>
             </h1>
             <p className="text-lg text-white/80 font-light mb-10 max-w-xl leading-relaxed">
               Premium protection, personalized care, and professional results, Glasgow Car Valeting brings luxury vehicle detailing delivered to your doorstep.

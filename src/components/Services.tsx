@@ -110,7 +110,7 @@ export function Services() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-center mb-12 gap-6">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white uppercase tracking-wide">
-            Here's What We Offer <span className="text-white">Motorists</span>
+            Premier Mobile Valeting <span className="text-primary">in Glasgow</span>
           </h2>
           
           <div className="flex gap-4 items-center self-end md:self-auto hidden md:flex">
