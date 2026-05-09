@@ -9,6 +9,8 @@ import { Footer } from "./components/Footer";
 import { Home } from "./pages/Home";
 import { ServicePage } from "./pages/ServicePage";
 import { LocationPage } from "./pages/LocationPage";
+import { Blog } from "./pages/Blog";
+import { ArticlePage } from "./pages/ArticlePage";
 
 export default function App() {
   return (
@@ -26,6 +28,10 @@ export default function App() {
             
             {/* Dynamic SEO Location Pages */}
             <Route path="/areas/:locationId" element={<LocationPage />} />
+            
+            {/* Content Marketing & Articles */}
+            <Route path="/journal" element={<Blog />} />
+            <Route path="/journal/:articleId" element={<ArticlePage />} />
           </Routes>
         </div>
 
