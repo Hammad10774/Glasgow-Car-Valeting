@@ -11,6 +11,7 @@ import { ServicePage } from "./pages/ServicePage";
 import { LocationPage } from "./pages/LocationPage";
 import { Blog } from "./pages/Blog";
 import { ArticlePage } from "./pages/ArticlePage";
+import { GlasgowWeatherCarPaint } from "./articles/GlasgowWeatherCarPaint";
 
 export default function App() {
   return (
@@ -31,6 +32,9 @@ export default function App() {
             
             {/* Content Marketing & Articles */}
             <Route path="/journal" element={<Blog />} />
+            {/* Named article routes — real content */}
+            <Route path="/journal/glasgow-weather-destroys-car-paint" element={<GlasgowWeatherCarPaint />} />
+            {/* Generic fallback for future articles */}
             <Route path="/journal/:articleId" element={<ArticlePage />} />
           </Routes>
         </div>

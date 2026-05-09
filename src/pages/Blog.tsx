@@ -2,22 +2,22 @@ import { Link } from 'react-router-dom';
 
 const articles = [
   {
-    id: "scottish-winter-paint-damage",
-    title: "How the Scottish Winter Damages Your Car Paint (And How to Stop It)",
-    excerpt: "Salt, grit, and freezing temperatures destroy clear coats. Discover why ceramic coating is essential for Glasgow motorists.",
-    date: "Oct 15, 2026"
+    id: "glasgow-weather-destroys-car-paint",
+    title: "How Glasgow's Weather Destroys Your Car Paint — And What to Do About It",
+    excerpt: "Glasgow gets 170+ days of rain a year. Road salt, acid rain, tree sap, and brake dust are silently destroying your car's paint. Here's exactly what's happening and how to stop it.",
+    date: "May 9, 2026"
   },
   {
     id: "ceramic-coating-vs-wax",
     title: "Ceramic Coating vs. Traditional Wax: What's the Difference?",
     excerpt: "Is the premium price tag of a ceramic coat worth it? We break down the exact differences in protection and shine.",
-    date: "Oct 02, 2026"
+    date: "Coming Soon"
   },
   {
     id: "mobile-valeting-benefits",
     title: "Why Mobile Valeting is Replacing Traditional Hand Car Washes",
     excerpt: "Time is money. See why busy professionals in Glasgow are switching to mobile valeting services.",
-    date: "Sep 20, 2026"
+    date: "Coming Soon"
   }
 ];
 
