@@ -14,6 +14,12 @@ const articles = [
     date: "May 10, 2026"
   },
   {
+    id: "how-much-does-a-car-valet-cost-glasgow",
+    title: "How Much Does a Car Valet Cost in Glasgow? (Honest 2026 Pricing Guide)",
+    excerpt: "Most car valet websites in Glasgow hide their prices. We don't. Here's exactly what a professional mobile valet costs, what drives the price, and how to make sure you're getting genuine value.",
+    date: "May 12, 2026"
+  },
+  {
     id: "mobile-valeting-benefits",
     title: "Why Mobile Valeting is Replacing Traditional Hand Car Washes",
     excerpt: "Time is money. See why busy professionals in Glasgow are switching to mobile valeting services.",

@@ -13,6 +13,7 @@ import { Blog } from "./pages/Blog";
 import { ArticlePage } from "./pages/ArticlePage";
 import { GlasgowWeatherCarPaint } from "./articles/GlasgowWeatherCarPaint";
 import { CeramicCoatingGlasgow } from "./articles/CeramicCoatingGlasgow";
+import { HowMuchCarValetCostGlasgow } from "./articles/HowMuchCarValetCostGlasgow";
 
 export default function App() {
   return (
@@ -36,6 +37,7 @@ export default function App() {
             {/* Named article routes — real content */}
             <Route path="/journal/glasgow-weather-destroys-car-paint" element={<GlasgowWeatherCarPaint />} />
             <Route path="/journal/ceramic-coating-glasgow-is-it-worth-it" element={<CeramicCoatingGlasgow />} />
+            <Route path="/journal/how-much-does-a-car-valet-cost-glasgow" element={<HowMuchCarValetCostGlasgow />} />
             {/* Generic fallback for future articles */}
             <Route path="/journal/:articleId" element={<ArticlePage />} />
           </Routes>
