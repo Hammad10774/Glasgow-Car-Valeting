@@ -8,10 +8,10 @@ const articles = [
     date: "May 9, 2026"
   },
   {
-    id: "ceramic-coating-vs-wax",
-    title: "Ceramic Coating vs. Traditional Wax: What's the Difference?",
-    excerpt: "Is the premium price tag of a ceramic coat worth it? We break down the exact differences in protection and shine.",
-    date: "Coming Soon"
+    id: "ceramic-coating-glasgow-is-it-worth-it",
+    title: "Ceramic Coating Glasgow — Is It Worth It?",
+    excerpt: "Is ceramic coating worth the investment in Glasgow? We break down exactly what it does, what it costs, how long it lasts, and give you our honest professional answer — without the sales pitch.",
+    date: "May 10, 2026"
   },
   {
     id: "mobile-valeting-benefits",
