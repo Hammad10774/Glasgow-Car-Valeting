@@ -30,10 +30,10 @@ export function CeramicCoatingGlasgow() {
 
         {/* Intro */}
         <p className="text-gray-300 leading-relaxed mb-6">
-          Whether you've heard the buzz from a car forum, seen it on a detailing YouTube channel, or a mate recommended it after getting his Audi done — you're probably asking the same question: <em>is ceramic coating actually worth it in Glasgow?</em>
+          Whether you've heard the buzz from a car forum, seen it on a detailing YouTube channel, or a mate recommended it after getting his Audi done, you're probably asking the same question: <em>is ceramic coating actually worth it in Glasgow?</em>
         </p>
         <p className="text-gray-300 leading-relaxed mb-6">
-          Short answer: <strong className="text-white">yes — if it's done right.</strong> Here's everything you need to know, without the jargon.
+          Short answer: <strong className="text-white">yes, if it's done right.</strong> Here's everything you need to know, without the jargon.
         </p>
 
         {/* Section 1 */}
@@ -44,7 +44,7 @@ export function CeramicCoatingGlasgow() {
           Ceramic coating is a liquid polymer applied by hand to the exterior of your vehicle. Once it cures, it chemically bonds with the factory paint and creates a hard, hydrophobic (water-repellent) layer of protection that doesn't wash off like wax or sealant.
         </p>
         <p className="text-gray-300 leading-relaxed mb-6">
-          Think of it as a second skin for your car — invisible, ultra-hard, and extraordinarily durable. Unlike a traditional wax job that needs to be re-applied every few months, a properly applied ceramic coating in Glasgow can last <strong className="text-white">2 to 5 years</strong> — and premium-grade coatings even longer.
+          Think of it as a second skin for your car: invisible, ultra-hard, and extraordinarily durable. Unlike a traditional wax job that needs to be re-applied every few months, a properly applied ceramic coating in Glasgow can last <strong className="text-white">2 to 5 years</strong>, with premium-grade coatings lasting even longer.
         </p>
 
         {/* Section 2 */}
@@ -52,7 +52,7 @@ export function CeramicCoatingGlasgow() {
           Why Glasgow Cars Need Ceramic Coating More Than Most
         </h2>
         <p className="text-gray-300 leading-relaxed mb-6">
-          Let's be honest about where we live. Glasgow gets <strong className="text-white">over 170 days of rain per year</strong>. Road salt in winter, tree sap in summer, bird droppings year-round — your car's paintwork is under constant assault. Add in the stop-start traffic of Byres Road, the M8 grime, and the general muck of Scottish roads, and you've got a recipe for dull, damaged paint.
+          Let's be honest about where we live. Glasgow gets <strong className="text-white">over 170 days of rain per year</strong>. Road salt in winter, tree sap in summer, bird droppings year-round. Your car's paintwork is under constant assault. Add in the stop-start traffic of Byres Road, the M8 grime, and the general muck of Scottish roads, and you've got a recipe for dull, damaged paint.
         </p>
 
         <div className="bg-[#111] border border-[var(--color-border-dark)] rounded-lg p-6 mb-8">
@@ -134,7 +134,7 @@ export function CeramicCoatingGlasgow() {
         </div>
 
         <p className="text-gray-300 leading-relaxed mb-6">
-          The bottom line? <strong className="text-white">Wax is a temporary fix. Ceramic coating is a long-term investment.</strong> If you're driving a newer car, a luxury vehicle, or anything you take pride in — ceramic coating in Glasgow is the intelligent choice.
+          The bottom line? <strong className="text-white">Wax is a temporary fix. Ceramic coating is a long-term investment.</strong> If you're driving a newer car, a luxury vehicle, or anything you take pride in, ceramic coating in Glasgow is the intelligent choice.
         </p>
 
         {/* Section 4 — Pricing */}
@@ -142,7 +142,7 @@ export function CeramicCoatingGlasgow() {
           How Much Does Ceramic Coating Cost in Glasgow?
         </h2>
         <p className="text-gray-300 leading-relaxed mb-6">
-          We'll be straight with you. Ceramic coating isn't the cheapest service on the menu — but the value-per-year calculation changes the story entirely.
+          We'll be straight with you. Ceramic coating isn't the cheapest service on the menu, but the value-per-year calculation changes the story entirely.
         </p>
 
         <div className="bg-[#111] border border-[var(--color-border-dark)] rounded-lg overflow-hidden mb-6">
@@ -175,7 +175,7 @@ export function CeramicCoatingGlasgow() {
         </div>
 
         <p className="text-gray-300 leading-relaxed mb-6">
-          <strong className="text-white">Important:</strong> The price reflects far more than just the coating itself. A professional ceramic coating job includes thorough prep work — decontamination, clay bar treatment, machine polishing or paint correction — to ensure the surface is perfectly clean before the coating bonds. If someone is quoting you £80 for a ceramic coat, they're cutting corners. Badly.
+          <strong className="text-white">Important:</strong> The price reflects far more than just the coating itself. A professional ceramic coating job includes thorough prep work (decontamination, clay bar treatment, machine polishing or paint correction) to ensure the surface is perfectly clean before the coating bonds. If someone is quoting you £80 for a ceramic coat, they're cutting corners. Badly.
         </p>
         <p className="text-gray-300 leading-relaxed mb-6">
           At Glasgow Car Valeting, we never skip the prep. Your coating is only as good as the surface underneath it.
@@ -216,7 +216,7 @@ export function CeramicCoatingGlasgow() {
               <span className="text-primary font-bold text-lg mt-0.5 leading-none">04</span>
               <div>
                 <strong className="text-white block mb-1">Ceramic Coating Application</strong>
-                The coating is applied panel by panel, buffed in, and allowed to flash. This requires skill, precision, and the right ambient conditions — not a job for a windy Glasgow afternoon.
+                The coating is applied panel by panel, buffed in, and allowed to flash. This requires skill, precision, and the right ambient conditions. It's not a job for a windy Glasgow afternoon.
               </div>
             </li>
             <li className="flex items-start gap-4">
@@ -242,7 +242,7 @@ export function CeramicCoatingGlasgow() {
           <li className="flex gap-3"><span className="text-primary font-bold">·</span><span><strong className="text-white">Premium / multi-layer coatings:</strong> 4–5+ years</span></li>
         </ul>
         <p className="text-gray-300 leading-relaxed mb-6">
-          With proper aftercare — using a pH-neutral shampoo, avoiding automated brush car washes, and booking an annual maintenance wash — your ceramic coating can last significantly longer. We provide a full aftercare guide with every coating we apply.
+          With proper aftercare (pH-neutral shampoo, no automated brush car washes, and an annual maintenance wash), your ceramic coating lasts significantly longer. We provide a full aftercare guide with every coating we apply.
         </p>
 
         {/* Section 7 — Honest Answer */}
@@ -250,7 +250,7 @@ export function CeramicCoatingGlasgow() {
           Is Ceramic Coating Worth It? Our Honest Answer.
         </h2>
         <p className="text-gray-300 leading-relaxed mb-6">
-          We're going to give you the honest professional answer — not just the one that sells a service.
+          We're going to give you the honest professional answer, not just the one that sells a service.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
@@ -275,7 +275,7 @@ export function CeramicCoatingGlasgow() {
         </div>
 
         <p className="text-gray-300 leading-relaxed mb-6">
-          For the vast majority of Glasgow car owners who take pride in what they drive — <strong className="text-white">ceramic coating is absolutely worth every pound.</strong>
+          For Glasgow car owners who take pride in what they drive, <strong className="text-white">ceramic coating is worth every pound.</strong>
         </p>
 
         {/* FAQ Section */}
@@ -287,7 +287,7 @@ export function CeramicCoatingGlasgow() {
           {[
             {
               q: "Can ceramic coating be applied to any car?",
-              a: "Yes. Ceramic coating works on any car regardless of age, colour, or manufacturer. Older cars may require more prep work — paint correction — first."
+              a: "Yes. Ceramic coating works on any car regardless of age, colour, or manufacturer. Older cars may require more prep work, specifically paint correction, first."
             },
             {
               q: "Does ceramic coating prevent scratches?",
@@ -299,7 +299,7 @@ export function CeramicCoatingGlasgow() {
             },
             {
               q: "Do you come to my home for ceramic coating in Glasgow?",
-              a: "Absolutely. Glasgow Car Valeting is fully mobile — we come to your home, workplace, or anywhere convenient across Glasgow and surrounding areas. No need to drop your car off anywhere."
+              a: "Yes. Glasgow Car Valeting is fully mobile. We come to your home, workplace, or anywhere convenient across Glasgow and surrounding areas. No drop-off required."
             },
             {
               q: "Do you cover areas outside Glasgow city centre?",
@@ -317,7 +317,7 @@ export function CeramicCoatingGlasgow() {
         <div className="mt-16 p-8 bg-[#111] border border-[var(--color-border-dark)] text-center">
           <h3 className="text-2xl font-heading mb-3 text-white">Book Ceramic Coating in Glasgow Today</h3>
           <p className="text-gray-400 mb-2">Your car deserves better than a £12 jet wash.</p>
-          <p className="text-primary font-bold text-lg mb-6">We come to your door — fully mobile, fully professional.</p>
+          <p className="text-primary font-bold text-lg mb-6">Fully mobile. Fully professional. We come to your door.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:07435740502"

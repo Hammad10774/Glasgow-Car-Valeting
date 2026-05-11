@@ -25,7 +25,7 @@ export function HowMuchCarValetCostGlasgow() {
         </h1>
 
         <p className="text-xl text-gray-300 leading-relaxed mb-12 border-l-4 border-primary pl-6">
-          Most car valet websites in Glasgow hide their prices. We don't. Here's exactly what a professional mobile valet costs, what drives the price, and how to make sure you're getting genuine value — not just a cheap wash.
+          Most car valet websites in Glasgow hide their prices. We don't. Here's exactly what a professional mobile valet costs, what drives the price, and how to make sure you're getting genuine value, not just a cheap wash.
         </p>
 
         {/* Intro */}
@@ -33,7 +33,7 @@ export function HowMuchCarValetCostGlasgow() {
           If you're searching for car valeting prices in Glasgow, you've probably noticed that most companies make you call or fill out a form before they'll give you a number. That's frustrating. And honestly, it doesn't need to be that way.
         </p>
         <p className="text-gray-300 leading-relaxed mb-6">
-          At Glasgow Car Valeting, we believe transparency builds trust. So here's our honest, no-nonsense breakdown of what car valeting costs in Glasgow in 2026 — by service type, by vehicle size, and with no hidden surprises.
+          At Glasgow Car Valeting, we believe transparency builds trust. So here's our honest, no-nonsense breakdown of what car valeting costs in Glasgow in 2026: by service type, by vehicle size, with no hidden surprises.
         </p>
 
         {/* Section 1 — What affects price */}
@@ -57,7 +57,7 @@ export function HowMuchCarValetCostGlasgow() {
               <span className="text-primary font-bold text-lg mt-0.5 leading-none">02</span>
               <div>
                 <strong className="text-white block mb-1">Service Type</strong>
-                A mini valet is a quick refresh. A full valet is comprehensive inside and out. Detailing services like machine polishing and ceramic coating require specialist equipment and skill — and are priced accordingly.
+                A mini valet is a quick refresh. A full valet is comprehensive inside and out. Detailing services like machine polishing and ceramic coating require specialist equipment and skill, and are priced accordingly.
               </div>
             </li>
             <li className="flex items-start gap-4">
@@ -75,7 +75,7 @@ export function HowMuchCarValetCostGlasgow() {
           Mini Valet Prices Glasgow
         </h2>
         <p className="text-gray-300 leading-relaxed mb-6">
-          A mini valet is the entry point — a thorough exterior wash and a tidy-up of the interior. It's ideal for maintaining a car that's already in good condition, or as a regular upkeep service every few weeks.
+          A mini valet is the entry point: a thorough exterior wash and a tidy-up of the interior. It's ideal for maintaining a car that's already in good condition, or as a regular upkeep service every few weeks.
         </p>
         <p className="text-gray-300 leading-relaxed mb-4">
           What's typically included: exterior hand wash, wheel clean, tyre shine, interior vacuum, dashboard wipe, windows cleaned inside and out.
@@ -115,7 +115,7 @@ export function HowMuchCarValetCostGlasgow() {
           Full Valet Prices Glasgow
         </h2>
         <p className="text-gray-300 leading-relaxed mb-6">
-          A full valet is a comprehensive deep clean — inside and out. This is where the real transformation happens. Seats shampooed, carpets extracted, door shuts cleaned, full exterior decontamination, and a hand-applied wax or sealant finish. If your car hasn't had a proper clean in months, this is what it needs.
+          A full valet is a thorough deep clean, inside and out. This is where the real transformation happens. Seats shampooed, carpets extracted, door shuts cleaned, full exterior decontamination, and a hand-applied wax or sealant finish. If your car hasn't had a proper clean in months, this is what it needs.
         </p>
 
         <div className="bg-[#111] border border-[var(--color-border-dark)] rounded-lg overflow-hidden mb-8">
@@ -152,7 +152,7 @@ export function HowMuchCarValetCostGlasgow() {
           Car Detailing Prices Glasgow
         </h2>
         <p className="text-gray-300 leading-relaxed mb-6">
-          Detailing goes beyond cleaning — it restores and protects. Machine polishing removes swirl marks and scratches. Paint correction brings dull paintwork back to a showroom finish. These are precision services that require specialist equipment, training, and significantly more time.
+          Detailing goes beyond cleaning. It restores and protects. Machine polishing removes swirl marks and scratches. Paint correction brings dull paintwork back to a showroom finish. These are precision services that require specialist equipment, training, and significantly more time.
         </p>
 
         <div className="bg-[#111] border border-[var(--color-border-dark)] rounded-lg overflow-hidden mb-8">
@@ -201,7 +201,7 @@ export function HowMuchCarValetCostGlasgow() {
           Ceramic Coating Prices Glasgow
         </h2>
         <p className="text-gray-300 leading-relaxed mb-6">
-          Ceramic coating is in a category of its own. It's not a one-off clean — it's a long-term investment in your paintwork that lasts 2 to 5 years. The price reflects not just the coating product, but the extensive prep work required before application: decontamination, clay bar, and machine polishing to ensure a perfect surface.
+          Ceramic coating is in a category of its own. It's not a one-off clean; it's a long-term investment in your paintwork that lasts 2 to 5 years. The price reflects not just the coating product, but the extensive prep work required before application: decontamination, clay bar, and machine polishing to ensure a perfect surface.
         </p>
 
         <div className="bg-[#111] border border-[var(--color-border-dark)] rounded-lg overflow-hidden mb-6">
@@ -234,7 +234,7 @@ export function HowMuchCarValetCostGlasgow() {
         </div>
 
         <p className="text-gray-300 leading-relaxed mb-6">
-          <strong className="text-white">Warning:</strong> If anyone quotes you under £100 for a ceramic coating in Glasgow, they are not applying a professional-grade product — or they're skipping the prep entirely. Either way, it won't last or perform as expected.
+          <strong className="text-white">Warning:</strong> If anyone quotes you under £100 for a ceramic coating in Glasgow, they are not applying a professional-grade product, or they're skipping the prep entirely. Either way, it won't last or perform as expected.
         </p>
         <p className="text-gray-300 leading-relaxed mb-6">
           Want the full breakdown on whether ceramic coating is right for your car?{' '}
@@ -251,7 +251,7 @@ export function HowMuchCarValetCostGlasgow() {
           There's a reason drive-through car washes charge £8. They use recycled water, rotating brushes that scratch your paintwork, and industrial detergents that strip your wax and dry out your trim. Every single pass through one of those machines leaves micro-scratches in your clear coat.
         </p>
         <p className="text-gray-300 leading-relaxed mb-6">
-          Over time, those scratches accumulate into the dull, swirled finish you see on older cars. Fixing that requires machine polishing or paint correction — services that cost far more than the money you saved on a series of cheap washes.
+          Over time, those scratches accumulate into the dull, swirled finish you see on older cars. Fixing that requires machine polishing or paint correction, which costs far more than the money you saved on a series of cheap washes.
         </p>
 
         <div className="bg-[#111] border border-[var(--color-border-dark)] rounded-lg p-6 mb-8">
@@ -269,7 +269,7 @@ export function HowMuchCarValetCostGlasgow() {
         </div>
 
         <p className="text-gray-300 leading-relaxed mb-6">
-          Professional mobile valeting isn't an expense — it's paint protection. Done consistently, it maintains your car's condition and resale value far better than any cheap alternative.
+          Professional mobile valeting isn't an expense. It's paint protection. Done consistently, it maintains your car's condition and resale value far better than any cheap alternative.
         </p>
 
         {/* Section 7 — Our pricing */}
@@ -277,13 +277,13 @@ export function HowMuchCarValetCostGlasgow() {
           Our Pricing at Glasgow Car Valeting
         </h2>
         <p className="text-gray-300 leading-relaxed mb-6">
-          We're a fully mobile, professional detailing service based in Glasgow. We use premium products, professional-grade equipment, and we come directly to your home or workplace — no drop-off, no waiting around.
+          We're a fully mobile, professional detailing service based in Glasgow. We use premium products, professional-grade equipment, and we come directly to your home or workplace, with no drop-off and no waiting around.
         </p>
         <p className="text-gray-300 leading-relaxed mb-6">
-          Our prices reflect that. We're not the cheapest option in Glasgow, and we're not trying to be. We're the best value — because our work protects your paint, preserves your car's condition, and saves you money on remediation down the line.
+          Our prices reflect that. We're not the cheapest option in Glasgow, and we're not trying to be. We're the best value because our work protects your paint, preserves your car's condition, and saves you money on remediation down the line.
         </p>
         <p className="text-gray-300 leading-relaxed mb-6">
-          Every job is quoted individually based on your vehicle size, current condition, and the service you need. Call or WhatsApp us for a free, no-obligation quote — we'll always be upfront with the price before we start.
+          Every job is quoted individually based on your vehicle size, current condition, and the service you need. Call or WhatsApp us for a free, no-obligation quote. We'll always be upfront with the price before we start.
         </p>
 
         {/* FAQ Section */}
@@ -299,7 +299,7 @@ export function HowMuchCarValetCostGlasgow() {
             },
             {
               q: "Do you charge extra for heavily soiled cars?",
-              a: "Yes — vehicles with excessive pet hair, heavy staining, or long-term neglect require more time and product. We'll always flag this and agree a price before starting the job."
+              a: "Yes. Vehicles with excessive pet hair, heavy staining, or long-term neglect require more time and product. We'll always flag this and agree a price before starting the job."
             },
             {
               q: "Is mobile valeting more expensive than a car wash?",
@@ -311,7 +311,7 @@ export function HowMuchCarValetCostGlasgow() {
             },
             {
               q: "How do I get a quote?",
-              a: "Call or WhatsApp us on 0743 574 0502. Tell us your vehicle, its condition, and what service you're after — we'll give you a straight price, no obligation."
+              a: "Call or WhatsApp us on 0743 574 0502. Tell us your vehicle, its condition, and what service you're after. We'll give you a straight price, no obligation."
             },
           ].map((faq, i) => (
             <div key={i} className="border-b border-[var(--color-border-dark)] pb-6">
@@ -325,7 +325,7 @@ export function HowMuchCarValetCostGlasgow() {
         <div className="mt-16 p-8 bg-[#111] border border-[var(--color-border-dark)] text-center">
           <h3 className="text-2xl font-heading mb-3 text-white">Get a Free Quote Today</h3>
           <p className="text-gray-400 mb-2">No hidden fees. No obligation. Just a straight price for a professional job.</p>
-          <p className="text-primary font-bold text-lg mb-6">We come to your door — all across Glasgow.</p>
+          <p className="text-primary font-bold text-lg mb-6">Fully mobile, all across Glasgow. We come to your door.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:07435740502"
