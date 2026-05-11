@@ -27,10 +27,10 @@ const articles = [
     date: "May 9, 2026"
   },
   {
-    id: "mobile-valeting-benefits",
-    title: "Why Mobile Valeting is Replacing Traditional Hand Car Washes",
-    excerpt: "Time is money. See why busy professionals in Glasgow are switching to mobile valeting services.",
-    date: "Coming Soon"
+    id: "machine-polishing-glasgow",
+    title: "Machine Polishing Glasgow: What It Is, What It Fixes, and Whether Your Car Needs It",
+    excerpt: "Your paint is clean but flat. Swirl marks catch the light at every angle. No amount of washing fixes that. Machine polishing does. Here's exactly what the process involves, what it costs, and what results to expect.",
+    date: "May 11, 2026"
   }
 ];
 

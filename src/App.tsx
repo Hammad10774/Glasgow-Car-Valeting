@@ -15,6 +15,7 @@ import { GlasgowWeatherCarPaint } from "./articles/GlasgowWeatherCarPaint";
 import { CeramicCoatingGlasgow } from "./articles/CeramicCoatingGlasgow";
 import { HowMuchCarValetCostGlasgow } from "./articles/HowMuchCarValetCostGlasgow";
 import { ValetingVsDetailing } from "./articles/ValetingVsDetailing";
+import { MachinePolishingGlasgow } from "./articles/MachinePolishingGlasgow";
 
 export default function App() {
   return (
@@ -40,6 +41,7 @@ export default function App() {
             <Route path="/journal/ceramic-coating-glasgow-is-it-worth-it" element={<CeramicCoatingGlasgow />} />
             <Route path="/journal/how-much-does-a-car-valet-cost-glasgow" element={<HowMuchCarValetCostGlasgow />} />
             <Route path="/journal/valeting-vs-detailing-glasgow" element={<ValetingVsDetailing />} />
+            <Route path="/journal/machine-polishing-glasgow" element={<MachinePolishingGlasgow />} />
             {/* Generic fallback for future articles */}
             <Route path="/journal/:articleId" element={<ArticlePage />} />
           </Routes>
