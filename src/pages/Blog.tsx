@@ -5,19 +5,19 @@ const articles = [
     id: "glasgow-weather-destroys-car-paint",
     title: "How Glasgow's Weather Destroys Your Car Paint — And What to Do About It",
     excerpt: "Glasgow gets 170+ days of rain a year. Road salt, acid rain, tree sap, and brake dust are silently destroying your car's paint. Here's exactly what's happening and how to stop it.",
-    date: "May 9, 2026"
+    date: "May 7, 2026"
   },
   {
     id: "ceramic-coating-glasgow-is-it-worth-it",
     title: "Ceramic Coating Glasgow — Is It Worth It?",
     excerpt: "Is ceramic coating worth the investment in Glasgow? We break down exactly what it does, what it costs, how long it lasts, and give you our honest professional answer — without the sales pitch.",
-    date: "May 10, 2026"
+    date: "May 8, 2026"
   },
   {
     id: "how-much-does-a-car-valet-cost-glasgow",
     title: "How Much Does a Car Valet Cost in Glasgow? (Honest 2026 Pricing Guide)",
     excerpt: "Most car valet websites in Glasgow hide their prices. We don't. Here's exactly what a professional mobile valet costs, what drives the price, and how to make sure you're getting genuine value.",
-    date: "May 12, 2026"
+    date: "May 9, 2026"
   },
   {
     id: "mobile-valeting-benefits",

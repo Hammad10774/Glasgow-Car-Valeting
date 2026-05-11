@@ -10,7 +10,7 @@ export function GlasgowWeatherCarPaint() {
         </Link>
 
         {/* Meta / Intro */}
-        <span className="text-primary text-xs uppercase tracking-widest mb-4 block">May 9, 2026 · 6 min read</span>
+        <span className="text-primary text-xs uppercase tracking-widest mb-4 block">May 7, 2026 · 6 min read</span>
 
         <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
           How Glasgow's Weather Destroys Your Car Paint — And What to Do About It

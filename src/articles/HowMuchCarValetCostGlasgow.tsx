@@ -10,7 +10,7 @@ export function HowMuchCarValetCostGlasgow() {
         </Link>
 
         {/* Meta / Intro */}
-        <span className="text-primary text-xs uppercase tracking-widest mb-4 block">May 12, 2026 · 7 min read</span>
+        <span className="text-primary text-xs uppercase tracking-widest mb-4 block">May 9, 2026 · 7 min read</span>
 
         <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
           How Much Does a Car Valet Cost in Glasgow? (Honest 2026 Pricing Guide)

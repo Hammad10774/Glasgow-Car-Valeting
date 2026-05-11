@@ -10,7 +10,7 @@ export function CeramicCoatingGlasgow() {
         </Link>
 
         {/* Meta / Intro */}
-        <span className="text-primary text-xs uppercase tracking-widest mb-4 block">May 10, 2026 · 8 min read</span>
+        <span className="text-primary text-xs uppercase tracking-widest mb-4 block">May 8, 2026 · 8 min read</span>
 
         <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
           Ceramic Coating Glasgow — Is It Worth It?
