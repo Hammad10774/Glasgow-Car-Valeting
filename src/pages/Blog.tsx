@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { SEOHead } from '../components/SEOHead';
 
 const articles = [
   {
@@ -30,6 +31,11 @@ const articles = [
 export function Blog() {
   return (
     <main className="pt-32 pb-24 bg-background-dark min-h-screen">
+      <SEOHead
+        title="Auto Care Journal | Car Valeting Tips & Guides | Glasgow Car Valeting"
+        description="Expert car care advice, detailing guides, ceramic coating tips and honest service breakdowns from Glasgow's premier mobile valeting specialists."
+        canonical="/journal"
+      />
       <div className="max-w-4xl mx-auto px-6 lg:px-12">
         <h1 className="text-5xl font-heading text-white mb-4">Auto Care <span className="text-primary italic">Journal</span></h1>
         <p className="text-gray-400 mb-16 text-lg">Expert advice, case studies, and insights from Glasgow's premier detailing specialists.</p>

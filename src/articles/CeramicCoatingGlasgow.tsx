@@ -1,8 +1,16 @@
 import { Link } from 'react-router-dom';
+import { SEOHead } from '../components/SEOHead';
 
 export function CeramicCoatingGlasgow() {
   return (
     <main className="pt-32 pb-24 bg-background-dark min-h-screen text-white">
+      <SEOHead
+        title="Ceramic Coating Glasgow — Is It Worth It? | Glasgow Car Valeting"
+        description="Thinking about ceramic coating in Glasgow? Here's the honest truth — what it costs, what it does, and whether it's worth every penny for your car."
+        canonical="/journal/ceramic-coating-glasgow-is-it-worth-it"
+        articleType={true}
+        articleDate="2026-05-08"
+      />
       <div className="max-w-3xl mx-auto px-6 lg:px-12">
 
         <Link to="/journal" className="text-primary text-xs uppercase tracking-widest mb-8 inline-block hover:text-white transition-colors">

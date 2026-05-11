@@ -3,6 +3,13 @@ import { Link } from 'react-router-dom';
 export function HowMuchCarValetCostGlasgow() {
   return (
     <main className="pt-32 pb-24 bg-background-dark min-h-screen text-white">
+      <SEOHead
+        title="How Much Does a Car Valet Cost in Glasgow? (Honest 2026 Pricing Guide) | Glasgow Car Valeting"
+        description="Most car valet websites in Glasgow hide their prices. We don't. Full 2026 pricing guide — mini valet, full valet, detailing and ceramic coating prices, by vehicle size."
+        canonical="/journal/how-much-does-a-car-valet-cost-glasgow"
+        articleType={true}
+        articleDate="2026-05-09"
+      />
       <div className="max-w-3xl mx-auto px-6 lg:px-12">
 
         <Link to="/journal" className="text-primary text-xs uppercase tracking-widest mb-8 inline-block hover:text-white transition-colors">

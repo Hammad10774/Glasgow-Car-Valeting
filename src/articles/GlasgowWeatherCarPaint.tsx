@@ -1,8 +1,16 @@
 import { Link } from 'react-router-dom';
+import { SEOHead } from '../components/SEOHead';
 
 export function GlasgowWeatherCarPaint() {
   return (
     <main className="pt-32 pb-24 bg-background-dark min-h-screen text-white">
+      <SEOHead
+        title="How Glasgow's Weather Destroys Your Car Paint — And What to Do About It | Glasgow Car Valeting"
+        description="Glasgow gets 170+ days of rain a year. Road salt, tree sap, acid rain and brake dust are silently destroying your paintwork. Here's exactly what's happening and how to stop it."
+        canonical="/journal/glasgow-weather-destroys-car-paint"
+        articleType={true}
+        articleDate="2026-05-07"
+      />
       <div className="max-w-3xl mx-auto px-6 lg:px-12">
 
         <Link to="/journal" className="text-primary text-xs uppercase tracking-widest mb-8 inline-block hover:text-white transition-colors">

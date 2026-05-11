@@ -3,31 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mobile Car Valeting & Detailing Glasgow | Premium Service</title>
-    <meta name="description" content="Glasgow's premier mobile car valeting & detailing service. We offer interior & exterior valeting, ceramic coating, machine polishing & more. Fully mobile, we come to you in Glasgow and surrounding areas." />
-    <meta name="keywords" content="Car Valeting Glasgow, Mobile Detailing Glasgow, Ceramic Coating, Mini Valet, Full Valet, Sports Car Detailing, Auto Detailing" />
-    <meta property="og:title" content="Mobile Car Valeting & Detailing Glasgow" />
-    <meta property="og:description" content="Glasgow's premier mobile car valeting service. Expert interior and exterior cleaning delivered to your door." />
-    <meta property="og:type" content="website" />
-    <meta name="author" content="Glasgow Car Valeting" />
+
+    <!-- Default meta — overridden per-page by react-helmet-async -->
+    <title>Glasgow Car Valeting | Premium Mobile Car Valeting & Detailing Glasgow</title>
+    <meta name="description" content="Glasgow's premier mobile car valeting & detailing service. We come to your door across Glasgow, Bearsden, Newton Mearns & beyond. Ceramic coating, machine polishing, full valet & more. Call 0743 574 0502." />
     <link rel="canonical" href="https://www.glasgowcarvaleting.co.uk/" />
-    <!-- Local Business Schema Markup for SEO -->
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="Glasgow Car Valeting" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Glasgow Car Valeting | Premium Mobile Car Valeting & Detailing Glasgow" />
+    <meta property="og:description" content="Glasgow's premier mobile car valeting & detailing service. We come to your door. Ceramic coating, machine polishing, full valet & more. Fully insured. Call 0743 574 0502." />
+    <meta property="og:url" content="https://www.glasgowcarvaleting.co.uk/" />
+    <meta property="og:image" content="https://www.glasgowcarvaleting.co.uk/og-image.jpg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Glasgow Car Valeting | Premium Mobile Car Valeting & Detailing Glasgow" />
+    <meta name="twitter:description" content="Glasgow's premier mobile car valeting & detailing. We come to your door. Fully insured. Call 0743 574 0502." />
+    <meta name="twitter:image" content="https://www.glasgowcarvaleting.co.uk/og-image.jpg" />
+
+    <!-- Geo signals -->
+    <meta name="geo.region" content="GB-GLG" />
+    <meta name="geo.placename" content="Glasgow" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Glasgow Car Valeting" />
+
+    <!-- LocalBusiness Schema -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "AutoWash",
-        "name": "Glasgow Car Valeting",
-        "url": "https://www.glasgowcarvaleting.co.uk/",
-        "description": "Glasgow's premier mobile car valeting & detailing service. Expert interior and exterior cleaning delivered to your door.",
-        "areaServed": {
-          "@type": "City",
-          "name": "Glasgow"
-        },
-        "priceRange": "$$",
-        "servesCuisine": "",
-        "telephone": "",
-        "hasMap": "https://www.google.com/maps/place/Glasgow,+UK"
-      }
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Glasgow Car Valeting",
+      "url": "https://www.glasgowcarvaleting.co.uk/",
+      "logo": "https://www.glasgowcarvaleting.co.uk/og-image.jpg",
+      "image": "https://www.glasgowcarvaleting.co.uk/og-image.jpg",
+      "description": "Glasgow's premier mobile car valeting & detailing service. Professional ceramic coating, machine polishing, paint correction and full valet — delivered to your door across Glasgow.",
+      "telephone": "+447435740502",
+      "email": "info@glasgowcarvaleting.co.uk",
+      "priceRange": "££",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Glasgow",
+        "addressRegion": "Scotland",
+        "addressCountry": "GB"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "55.8642",
+        "longitude": "-4.2518"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Glasgow" },
+        { "@type": "City", "name": "Bearsden" },
+        { "@type": "City", "name": "Newton Mearns" },
+        { "@type": "City", "name": "Milngavie" }
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "06:00",
+          "closes": "21:00"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Car Valeting & Detailing Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mobile Car Valeting Glasgow" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ceramic Coating Glasgow" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Machine Polishing Glasgow" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Paint Correction Glasgow" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full Valet Glasgow" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Interior Car Valet Glasgow" } }
+        ]
+      },
+      "sameAs": [
+        "https://github.com/Hammad10774/Glasgow-Car-Valeting"
+      ]
+    }
     </script>
   </head>
   <body>
@@ -35,4 +90,3 @@
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
-
