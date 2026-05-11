@@ -15,6 +15,12 @@ const articles = [
     date: "May 8, 2026"
   },
   {
+    id: "valeting-vs-detailing-glasgow",
+    title: "What's the Difference Between Valeting and Detailing?",
+    excerpt: "Most people use the words interchangeably — they're not the same thing. One cleans your car. The other restores it. Here's exactly what separates them and which one your car actually needs.",
+    date: "May 10, 2026"
+  },
+  {
     id: "how-much-does-a-car-valet-cost-glasgow",
     title: "How Much Does a Car Valet Cost in Glasgow? (Honest 2026 Pricing Guide)",
     excerpt: "Most car valet websites in Glasgow hide their prices. We don't. Here's exactly what a professional mobile valet costs, what drives the price, and how to make sure you're getting genuine value.",
