@@ -35,6 +35,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.glasgowcarvaleting.co.uk/journal/paint-correction-glasgow</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://www.glasgowcarvaleting.co.uk/journal/machine-polishing-glasgow</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>

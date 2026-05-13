@@ -3,6 +3,12 @@ import { SEOHead } from '../components/SEOHead';
 
 const articles = [
   {
+    id: "paint-correction-glasgow",
+    title: "Paint Correction Glasgow: What It Is, What It Costs, and When Your Car Needs It",
+    excerpt: "Paint correction removes deep scratches, heavy swirl marks, and years of accumulated paint damage permanently. Here's the full guide: what the process involves, which stage your car needs, and what it costs in Glasgow.",
+    date: "May 13, 2026"
+  },
+  {
     id: "glasgow-weather-destroys-car-paint",
     title: "How Glasgow's Weather Destroys Your Car Paint — And What to Do About It",
     excerpt: "Glasgow gets 170+ days of rain a year. Road salt, acid rain, tree sap, and brake dust are silently destroying your car's paint. Here's exactly what's happening and how to stop it.",
