@@ -3,6 +3,12 @@ import { SEOHead } from '../components/SEOHead';
 
 const articles = [
   {
+    id: "how-long-does-ceramic-coating-last",
+    title: "How Long Does Ceramic Coating Last?",
+    excerpt: "Professional ceramic coatings last 2–5 years. Consumer spray-ons last 3–6 months. The gap between those outcomes is determined by the product, the paint prep, and how the car is maintained. Here's the full breakdown.",
+    date: "May 14, 2026"
+  },
+  {
     id: "paint-correction-glasgow",
     title: "Paint Correction Glasgow: What It Is, What It Costs, and When Your Car Needs It",
     excerpt: "Paint correction removes deep scratches, heavy swirl marks, and years of accumulated paint damage permanently. Here's the full guide: what the process involves, which stage your car needs, and what it costs in Glasgow.",
