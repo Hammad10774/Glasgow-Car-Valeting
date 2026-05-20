@@ -12,7 +12,7 @@ interface SEOHeadProps {
 
 const SITE_NAME = 'Glasgow Car Valeting';
 const SITE_URL = 'https://www.glasgowcarvaleting.co.uk';
-const OG_IMAGE = `${SITE_URL}/og-image.jpg`;
+const OG_IMAGE = `${SITE_URL}/hero-bg.jpg`;
 const PHONE = '0743 574 0502';
 
 export function SEOHead({
