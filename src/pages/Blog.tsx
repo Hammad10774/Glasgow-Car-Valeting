@@ -3,6 +3,24 @@ import { SEOHead } from '../components/SEOHead';
 
 const articles = [
   {
+    id: "sports-car-detailing-glasgow",
+    title: "Why Sports Car Owners in Glasgow Choose Mobile Detailing",
+    excerpt: "Owners of Porsches, BMWs and Ferraris choose mobile detailing for paint quality, security and practicality. Here is why it is the better option for any sports car in Glasgow.",
+    date: "May 28, 2026"
+  },
+  {
+    id: "interior-valet-vs-mini-valet-glasgow",
+    title: "Full Interior Valet vs Mini Valet: Which Does Your Car Actually Need?",
+    excerpt: "A mini valet is a tidy-up. A full interior valet removes embedded dirt, bacteria and odours from the fabric itself. Here is the honest difference and how to choose.",
+    date: "May 24, 2026"
+  },
+  {
+    id: "machine-polishing-vs-hand-polishing",
+    title: "Machine Polishing vs Hand Polishing: Which One Actually Works?",
+    excerpt: "Machine polishing removes swirl marks permanently. Hand polishing cannot. Here is the honest comparison every Glasgow car owner needs before spending money on a polish.",
+    date: "May 21, 2026"
+  },
+  {
     id: "how-long-does-ceramic-coating-last",
     title: "How Long Does Ceramic Coating Last?",
     excerpt: "Professional ceramic coatings last 2–5 years. Consumer spray-ons last 3–6 months. The gap between those outcomes is determined by the product, the paint prep, and how the car is maintained. Here's the full breakdown.",

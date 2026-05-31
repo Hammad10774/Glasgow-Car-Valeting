@@ -178,6 +178,68 @@ The roads connecting Milngavie to the rest of Glasgow, the A81, A810 and B8050, 
       { name: 'Interior Valet', desc: 'Deep interior clean with seat shampoo and carpet extraction.', link: '/services/interior-valet' },
     ],
   },
+  'glasgow-south-car-valeting': {
+    title: 'Car Valeting Glasgow South | Mobile Detailing Service | Glasgow Car Valeting',
+    description: 'Premium mobile car valeting across Glasgow South. Serving Giffnock, Clarkston, Busby, Thornliebank and East Renfrewshire. We come to your door. Call 0743 574 0502.',
+  },
+  'clarkston-car-valeting': {
+    title: 'Car Valeting Clarkston | Premium Mobile Detailing | Glasgow Car Valeting',
+    description: 'Professional mobile car valeting and detailing in Clarkston. We come to your driveway. Ceramic coating, machine polishing, full valet. Fully insured. Call 0743 574 0502.',
+  },
+  'glasgow-south-car-valeting': [
+    { q: 'Do you cover Glasgow South for mobile car valeting?', a: 'Yes. We cover the full Glasgow South area including Giffnock, Clarkston, Busby, Thornliebank, Williamwood, Stamperland and surrounding East Renfrewshire postcodes. We come to your home driveway and carry out all services at your location. No travel charge applies across Glasgow South.' },
+    { q: 'What is the most requested car detailing service in Glasgow South?', a: 'Ceramic coating and machine polishing are our most requested services across Glasgow South. The area has a high proportion of premium vehicles, and the combination of residential tree coverage, motorway fallout from the M77 and the damp climate makes paint protection a priority for owners who want to maintain their vehicle in good condition. Ceramic coating in particular is in high demand from BMW, Audi and Range Rover owners across Giffnock and Clarkston.' },
+    { q: 'Why do Glasgow South cars need paint protection?', a: 'Glasgow South sits alongside the M77, which generates significant brake dust and industrial fallout that bonds to paintwork and alloy wheels. Residential streets throughout Giffnock and Clarkston have established tree coverage that produces sap and organic fallout through the warmer months. Combined with the standard Glasgow winter of road salt from October through March, Glasgow South paintwork takes consistent punishment without proper protection.' },
+    { q: 'How much does mobile car valeting cost in Glasgow South?', a: 'Our pricing in Glasgow South is the same as our standard pricing with no travel surcharge. A full interior valet starts from £60. A full valet starts from £100. Machine polishing starts from £150. Ceramic coating starts from £250. All prices confirmed in a free quote before any work begins.' },
+    { q: 'Can you do ceramic coating in Giffnock or Thornliebank?', a: 'Yes. We carry out ceramic coating applications across Glasgow South including Giffnock, Thornliebank, Clarkston, Busby and surrounding areas. Most Glasgow South properties have driveways which gives us ideal conditions for a full prep and coating application. We bring all equipment and the car does not need to go anywhere.' },
+  ],
+  'clarkston-car-valeting': [
+    { q: 'Do you cover Clarkston for mobile car valeting?', a: 'Yes. Clarkston is a core part of our Glasgow South service area. We cover Clarkston, Stamperland, Williamwood, Busby and surrounding East Renfrewshire postcodes. We come to your home driveway with all equipment and products and carry out the full service at your location.' },
+    { q: 'What makes Clarkston cars particularly susceptible to paint damage?', a: 'Clarkston sits in a belt of affluent East Renfrewshire suburbs with significant tree coverage and proximity to the M77 and surrounding arterial roads. Tree sap from established residential gardens and street trees is a persistent problem on driveways from spring through autumn. The roads connecting Clarkston to Glasgow also produce stone chip exposure on motorway-adjacent routes. Clarkston drivers with premium vehicles tend to prioritise paint protection for exactly these reasons.' },
+    { q: 'What car detailing services do you offer in Clarkston?', a: 'We offer the full range in Clarkston: ceramic coating, machine polishing, paint correction, full valet and interior valet. Paint correction followed by ceramic coating is the most popular combination among Clarkston owners of prestige vehicles, providing permanent defect removal followed by 2 to 5 years of protection. All services are carried out at your home with no travel charge.' },
+    { q: 'How much does car valeting cost in Clarkston?', a: 'Our Clarkston pricing matches our standard rates. Interior valet from £60. Full valet from £100. Machine polishing from £150. Ceramic coating from £250. All confirmed in a free quote based on your vehicle size and condition before any work starts.' },
+    { q: 'Can you prepare a car for sale in Clarkston?', a: 'Yes. Pre-sale preparation is popular among Clarkston owners selling premium vehicles. A full valet combined with machine polishing to remove swirl marks from dark paint, followed by a light sealant, is the standard pre-sale package. For higher-value vehicles we also offer a ceramic coating that transfers to the new owner as an additional selling point. We quote the most appropriate package for the vehicle and asking price.' },
+  ],
+  'glasgow-south-car-valeting': {
+    intro: `Glasgow South covers a broad stretch of prosperous suburban and semi-rural communities running from the Southside boundary through East Renfrewshire. Giffnock, Clarkston, Busby, Thornliebank and Williamwood are among the most car-conscious communities in the greater Glasgow area. The proportion of premium and executive vehicles is high, the properties typically have driveway access, and the owners have expectations to match.
+
+Our mobile car valeting and detailing service covers the full Glasgow South area. We come to your driveway with all equipment and carry out every service at your home. There is no need to take the car anywhere. We bring the professional studio standard to your location and work at your property while you get on with your day.
+
+Glasgow South was one of the areas we identified as underserved when we mapped our service coverage. Budget hand car washes have historically been the main accessible option across this area. We provide a professional alternative: trained operators, correct technique and proper products, at prices that compete with what those budget options charge.`,
+    areasServed: ['Giffnock', 'Clarkston', 'Busby', 'Thornliebank', 'Williamwood', 'Stamperland', 'Eaglesham Road area', 'Whitecraigs', 'Netherlee'],
+    localContext: `Glasgow South sits adjacent to the M77, which is the source of a significant and underappreciated paint problem. Motorway traffic generates brake dust, tyre rubber particulates and industrial fallout that drifts across residential areas close to the route. Brake dust is particularly damaging because it contains iron particles that bond chemically with paint and alloy wheel surfaces. Left untreated, iron deposits accelerate surface oxidation. Our decontamination process includes an iron fallout remover that chemically dissolves these bonded particles before they cause lasting damage.
+
+Tree coverage across residential streets in Giffnock, Williamwood and Clarkston is substantial. Established gardens with ornamental trees, lime street trees and sycamores in older residential streets produce sap and aphid honeydew from April through October. Cars parked on driveways under tree canopy can accumulate deposits within hours during peak sap season.
+
+The B-roads and suburban routes connecting Glasgow South to the city centre and East Renfrewshire produce more stone chip exposure than motorway driving. Surface dressing on residential roads and occasional loose chippings from rural routes toward Eaglesham and Busby accumulate on lower panels and bonnets over time.`,
+    services: [
+      { name: 'Ceramic Coating', desc: 'Long-term protection against M77 fallout, tree sap and Glasgow winter road salt. 2 to 5 year rated.', link: '/services/ceramic-coating' },
+      { name: 'Machine Polishing', desc: 'Swirl removal and gloss restoration for premium vehicles across Glasgow South.', link: '/services/machine-polishing' },
+      { name: 'Paint Correction', desc: 'Multi-stage correction for sap etching, deep scratches and oxidation.', link: '/services/paint-correction' },
+      { name: 'Full Valet', desc: 'Complete exterior and interior clean at your Glasgow South driveway.', link: '/services/full-valet' },
+      { name: 'Interior Valet', desc: 'Deep clean with hot water extraction. Pet hair removal, seat shampoo and carpet extraction.', link: '/services/interior-valet' },
+    ],
+  },
+  'clarkston-car-valeting': {
+    intro: `Clarkston is one of the most sought-after residential areas in East Renfrewshire, sitting between the southern boundary of Glasgow and the open countryside toward Eaglesham and Busby. The streets throughout Clarkston and neighbouring Stamperland and Williamwood have a high concentration of premium vehicles. BMW, Audi, Range Rover and Mercedes are common sights on the driveways of the semi-detached and detached properties that characterise the area.
+
+Our mobile car valeting and detailing service covers Clarkston and all surrounding East Renfrewshire areas. We come to your driveway, bring everything we need and carry out the complete service at your home. Most Clarkston properties have private driveway access, which gives us excellent working conditions compared to the street parking challenges of the inner city. There is room to work around the vehicle properly, and the stable conditions make tasks like ceramic coating application and machine polishing straightforward.
+
+We are the professional mobile alternative to the budget hand car washes that have been the main option across this area. Our operators are trained, our products are professional grade and our technique is correct. The difference in result compared to a budget wash is immediately visible.`,
+    areasServed: ['Clarkston', 'Stamperland', 'Williamwood', 'Busby', 'Eaglesham', 'Netherlee', 'Muirend'],
+    localContext: `Clarkston's residential character means most cars are driveways vehicles, parked beneath or adjacent to mature garden trees for much of the year. Ornamental trees and established hedgerow on the boundaries of larger properties create a persistent sap and organic fallout risk from April through October. Cherry trees, ornamental maples and established hedgerow across the Clarkston and Stamperland streets are among the most common sources of sticky deposits landing on parked paintwork.
+
+The routes connecting Clarkston to Glasgow, particularly the Busby Road, Clarkston Road and the B767 toward Eaglesham, are among the more chip-prone routes in the area. Surface dressing sections and the speed of traffic on these roads generate stone chip exposure that accumulates on bonnets and front bumpers over driving seasons.
+
+Clarkston's cold winters mirror the rest of the greater Glasgow area. The roads into and through Clarkston are salted from October through March, and the salt exposure on wheel arches and lower body panels of vehicles regularly driven through winter is significant. Our full valet and decontamination process addresses this specifically, removing bonded salt and metallic fallout before they cause long-term damage.`,
+    services: [
+      { name: 'Ceramic Coating', desc: 'The essential protection for Clarkston driveways under garden and street tree coverage. 2 to 5 year rated.', link: '/services/ceramic-coating' },
+      { name: 'Paint Correction', desc: 'Multi-stage defect correction for premium vehicles before coating application.', link: '/services/paint-correction' },
+      { name: 'Machine Polishing', desc: 'Swirl removal and gloss restoration for dark BMWs, Audis and Range Rovers.', link: '/services/machine-polishing' },
+      { name: 'Full Valet', desc: 'Complete exterior and interior professional clean at your Clarkston driveway.', link: '/services/full-valet' },
+      { name: 'Interior Valet', desc: 'Deep interior clean including seat shampoo, carpet extraction and leather conditioning.', link: '/services/interior-valet' },
+    ],
+  },
 };
 
 /* ─── Component ─────────────────────────────────────────────── */

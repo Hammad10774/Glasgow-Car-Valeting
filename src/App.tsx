@@ -18,6 +18,9 @@ import { ValetingVsDetailing } from "./articles/ValetingVsDetailing";
 import { MachinePolishingGlasgow } from "./articles/MachinePolishingGlasgow";
 import { PaintCorrectionGlasgow } from "./articles/PaintCorrectionGlasgow";
 import { HowLongDoesCeramicCoatingLast } from "./articles/HowLongDoesCeramicCoatingLast";
+import { MachinePolishingVsHandPolishing } from "./articles/MachinePolishingVsHandPolishing";
+import { InteriorValetVsMiniValet } from "./articles/InteriorValetVsMiniValet";
+import { SportsCarsDetailingGlasgow } from "./articles/SportsCarsDetailingGlasgow";
 
 export default function App() {
   return (
@@ -46,6 +49,9 @@ export default function App() {
             <Route path="/journal/machine-polishing-glasgow" element={<MachinePolishingGlasgow />} />
             <Route path="/journal/paint-correction-glasgow" element={<PaintCorrectionGlasgow />} />
             <Route path="/journal/how-long-does-ceramic-coating-last" element={<HowLongDoesCeramicCoatingLast />} />
+            <Route path="/journal/machine-polishing-vs-hand-polishing" element={<MachinePolishingVsHandPolishing />} />
+            <Route path="/journal/interior-valet-vs-mini-valet-glasgow" element={<InteriorValetVsMiniValet />} />
+            <Route path="/journal/sports-car-detailing-glasgow" element={<SportsCarsDetailingGlasgow />} />
             {/* Generic fallback for future articles */}
             <Route path="/journal/:articleId" element={<ArticlePage />} />
           </Routes>
