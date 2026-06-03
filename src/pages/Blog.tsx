@@ -3,6 +3,12 @@ import { SEOHead } from '../components/SEOHead';
 
 const articles = [
   {
+    id: "bmw-m3-paint-correction-bearsden",
+    title: "BMW M3 Paint Correction in Bearsden: Before and After Case Study",
+    excerpt: "A Sapphire Black M3 Competition came to us with two years of automated car wash damage. Heavy swirls, bird drop etching, water spots. Here is the full correction and ceramic coating process.",
+    date: "June 3, 2026"
+  },
+  {
     id: "sports-car-detailing-glasgow",
     title: "Why Sports Car Owners in Glasgow Choose Mobile Detailing",
     excerpt: "Owners of Porsches, BMWs and Ferraris choose mobile detailing for paint quality, security and practicality. Here is why it is the better option for any sports car in Glasgow.",

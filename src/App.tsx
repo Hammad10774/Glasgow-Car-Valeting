@@ -21,6 +21,7 @@ import { HowLongDoesCeramicCoatingLast } from "./articles/HowLongDoesCeramicCoat
 import { MachinePolishingVsHandPolishing } from "./articles/MachinePolishingVsHandPolishing";
 import { InteriorValetVsMiniValet } from "./articles/InteriorValetVsMiniValet";
 import { SportsCarsDetailingGlasgow } from "./articles/SportsCarsDetailingGlasgow";
+import { BMWM3PaintCorrectionBearsden } from "./articles/BMWM3PaintCorrectionBearsden";
 
 export default function App() {
   return (
@@ -52,6 +53,7 @@ export default function App() {
             <Route path="/journal/machine-polishing-vs-hand-polishing" element={<MachinePolishingVsHandPolishing />} />
             <Route path="/journal/interior-valet-vs-mini-valet-glasgow" element={<InteriorValetVsMiniValet />} />
             <Route path="/journal/sports-car-detailing-glasgow" element={<SportsCarsDetailingGlasgow />} />
+            <Route path="/journal/bmw-m3-paint-correction-bearsden" element={<BMWM3PaintCorrectionBearsden />} />
             {/* Generic fallback for future articles */}
             <Route path="/journal/:articleId" element={<ArticlePage />} />
           </Routes>
