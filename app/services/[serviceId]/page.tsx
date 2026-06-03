@@ -1,8 +1,8 @@
-import { useParams, Link } from 'react-router-dom';
-import { SEOHead } from '../components/SEOHead';
-import { Reviews } from '../components/Reviews';
+import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
+import Link from 'next/link';
+import { Reviews } from '../../../src/components/Reviews';
 
-/* ─── SEO meta ─────────────────────────────────────────────── */
 const serviceMeta: Record<string, { title: string; description: string }> = {
   'ceramic-coating': {
     title: 'Ceramic Coating Glasgow | Professional Mobile Application | Glasgow Car Valeting',
@@ -315,53 +315,63 @@ Mould in door seals and boot areas is common on Glasgow cars that sit in damp co
 };
 
 /* ─── Component ─────────────────────────────────────────────── */
-export function ServicePage() {
-  const { serviceId } = useParams<{ serviceId: string }>();
-  const meta = serviceId ? serviceMeta[serviceId] : null;
-  const content = serviceId ? serviceContent[serviceId] : null;
-  const faqs = serviceId ? serviceFaqs[serviceId] : null;
 
-  const serviceName = serviceId
-    ?.split('-')
-    .map(w => w.charAt(0).toUpperCase() + w.slice(1))
-    .join(' ') || 'Service';
+const SERVICE_NAMES: Record<string, string> = {
+  'ceramic-coating': 'Ceramic Coating',
+  'machine-polishing': 'Machine Polishing',
+  'paint-correction': 'Paint Correction',
+  'full-valet': 'Full Valet',
+  'interior-valet': 'Interior Valet',
+};
 
-  const title = meta?.title || `${serviceName} Glasgow | Glasgow Car Valeting`;
-  const description = meta?.description || `Premium ${serviceName.toLowerCase()} in Glasgow. Fully mobile. We come to your door. Call 0743 574 0502.`;
+const SERVICE_IDS = ['ceramic-coating', 'machine-polishing', 'paint-correction', 'full-valet', 'interior-valet'];
 
-  // Build FAQ JSON-LD
+export async function generateStaticParams() {
+  return SERVICE_IDS.map((serviceId) => ({ serviceId }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ serviceId: string }>;
+}): Promise<Metadata> {
+  const { serviceId } = await params;
+  const meta = serviceMeta[serviceId];
+  if (!meta) return {};
+  return {
+    title: meta.title,
+    description: meta.description,
+    alternates: { canonical: `/services/${serviceId}` },
+  };
+}
+
+export default async function ServicePageNext({
+  params,
+}: {
+  params: Promise<{ serviceId: string }>;
+}) {
+  const { serviceId } = await params;
+  const content = serviceContent[serviceId];
+  const meta = serviceMeta[serviceId];
+  const faqs = serviceFaqs[serviceId];
+  const serviceName = SERVICE_NAMES[serviceId];
+
+  if (!content || !meta) notFound();
+
   const faqSchema = faqs
     ? {
         '@context': 'https://schema.org',
         '@type': 'FAQPage',
-        mainEntity: faqs.map(f => ({
+        mainEntity: faqs.map((faq) => ({
           '@type': 'Question',
-          name: f.q,
-          acceptedAnswer: { '@type': 'Answer', text: f.a },
+          name: faq.q,
+          acceptedAnswer: { '@type': 'Answer', text: faq.a },
         })),
       }
     : null;
 
-  if (!content) {
-    // Fallback for unknown service IDs, noindex
-    return (
-      <main className="pt-32 pb-24 bg-background-dark min-h-screen text-white">
-        <div className="max-w-3xl mx-auto px-6 lg:px-12 text-center">
-          <h1 className="text-4xl font-bold mb-4">Service Not Found</h1>
-          <p className="text-gray-400 mb-8">Browse our available services below.</p>
-          <Link to="/" className="bg-primary hover:bg-white text-black px-8 py-4 font-bold tracking-widest text-xs uppercase inline-block transition-colors">
-            Back to Home
-          </Link>
-        </div>
-      </main>
-    );
-  }
-
   return (
-    <main className="bg-background-dark text-white">
-      <SEOHead title={title} description={description} canonical={`/services/${serviceId}`} />
-
-      {/* FAQ Schema */}
+    <main className="min-h-screen bg-background-dark text-white">
       {faqSchema && (
         <script
           type="application/ld+json"
@@ -374,9 +384,7 @@ export function ServicePage() {
         <div className="max-w-4xl mx-auto px-6 lg:px-12">
           <span className="text-primary text-xs uppercase tracking-widest mb-4 block">Glasgow Car Valeting</span>
           <h1 className="text-4xl lg:text-5xl font-bold mb-6">{serviceName} in Glasgow</h1>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
-            {meta?.description}
-          </p>
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">{meta.description}</p>
           <a
             href="tel:07435740502"
             className="bg-primary hover:bg-white text-black px-8 py-4 font-bold tracking-widest text-xs uppercase inline-block transition-colors"
@@ -460,7 +468,6 @@ export function ServicePage() {
         </div>
       </section>
 
-      {/* Reviews */}
       <Reviews />
 
       {/* FAQs */}
@@ -470,7 +477,7 @@ export function ServicePage() {
             <h2 className="text-3xl font-bold text-white mb-10">Frequently asked questions</h2>
             <div className="space-y-8">
               {faqs.map((faq, i) => (
-                <div key={i} className="border-b border-white/10 pb-8 last:border-0 last:pb-0">
+                <div key={i} className="border-b border-white/10 pb-8 last:border-0">
                   <h3 className="text-white font-semibold text-lg mb-3">{faq.q}</h3>
                   <p className="text-gray-300 leading-relaxed">{faq.a}</p>
                 </div>
@@ -484,7 +491,7 @@ export function ServicePage() {
       <section className="py-20 bg-zinc-900 text-center">
         <div className="max-w-2xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-white mb-4">Get a free quote today</h2>
-          <p className="text-gray-300 mb-8">Fully mobile across Glasgow, we come to your home or workplace. No garage drop-off required.</p>
+          <p className="text-gray-300 mb-8">Fully mobile across Glasgow. We come to your home or workplace. No garage drop-off required.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:07435740502"
@@ -493,7 +500,7 @@ export function ServicePage() {
               Call 0743 574 0502
             </a>
             <Link
-              to="/journal"
+              href="/journal"
               className="border border-white/30 hover:border-white text-white px-8 py-4 font-bold tracking-widest text-xs uppercase transition-colors"
             >
               Read Our Guides

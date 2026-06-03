@@ -1,19 +1,11 @@
-import { Link } from 'react-router-dom';
-import { SEOHead } from '../components/SEOHead';
+import Link from 'next/link';
 
 export function CeramicCoatingGlasgow() {
   return (
     <main className="pt-32 pb-24 bg-background-dark min-h-screen text-white">
-      <SEOHead
-        title="Ceramic Coating Glasgow — Is It Worth It? | Glasgow Car Valeting"
-        description="Thinking about ceramic coating in Glasgow? Here's the honest truth — what it costs, what it does, and whether it's worth every penny for your car."
-        canonical="/journal/ceramic-coating-glasgow-is-it-worth-it"
-        articleType={true}
-        articleDate="2026-05-08"
-      />
-      <div className="max-w-3xl mx-auto px-6 lg:px-12">
+<div className="max-w-3xl mx-auto px-6 lg:px-12">
 
-        <Link to="/journal" className="text-primary text-xs uppercase tracking-widest mb-8 inline-block hover:text-white transition-colors">
+        <Link href="/journal" className="text-primary text-xs uppercase tracking-widest mb-8 inline-block hover:text-white transition-colors">
           ← Back to Journal
         </Link>
 
@@ -326,7 +318,7 @@ export function CeramicCoatingGlasgow() {
               Call 0743 574 0502
             </a>
             <Link
-              to="/services/ceramic-coating"
+              href="/services/ceramic-coating"
               className="border border-white hover:border-primary text-white hover:text-primary px-8 py-4 font-bold tracking-widest text-xs uppercase inline-block transition-colors"
             >
               View Ceramic Coating

@@ -1,19 +1,11 @@
-import { Link } from 'react-router-dom';
-import { SEOHead } from '../components/SEOHead';
+import Link from 'next/link';
 
 export function MachinePolishingGlasgow() {
   return (
     <main className="pt-32 pb-24 bg-background-dark min-h-screen text-white">
-      <SEOHead
-        title="Machine Polishing Glasgow: What It Is, What It Fixes, and Whether Your Car Needs It | Glasgow Car Valeting"
-        description="Your car's paint looks dull, swirled, or hazy. Machine polishing is how you fix it. Here's exactly what the process involves, what it costs in Glasgow, and what results to expect."
-        canonical="/journal/machine-polishing-glasgow"
-        articleType={true}
-        articleDate="2026-05-11"
-      />
-      <div className="max-w-3xl mx-auto px-6 lg:px-12">
+<div className="max-w-3xl mx-auto px-6 lg:px-12">
 
-        <Link to="/journal" className="text-primary text-xs uppercase tracking-widest mb-8 inline-block hover:text-white transition-colors">
+        <Link href="/journal" className="text-primary text-xs uppercase tracking-widest mb-8 inline-block hover:text-white transition-colors">
           ← Back to Journal
         </Link>
 
@@ -310,7 +302,7 @@ export function MachinePolishingGlasgow() {
         </p>
         <p className="text-gray-300 leading-relaxed mb-6">
           The way to preserve the corrected finish is to protect it immediately after polishing. A{' '}
-          <Link to="/services/ceramic-coating" className="text-primary hover:text-white transition-colors underline underline-offset-4">
+          <Link href="/services/ceramic-coating" className="text-primary hover:text-white transition-colors underline underline-offset-4">
             ceramic coating
           </Link>
           {' '}applied after a machine polish seals the corrected paint under a hard, hydrophobic layer that repels contamination and resists light scratching. Without any protection, the paint will start accumulating new defects within months.
@@ -324,17 +316,17 @@ export function MachinePolishingGlasgow() {
           <h3 className="text-white font-bold mb-4">Related guides</h3>
           <ul className="space-y-3">
             <li>
-              <Link to="/journal/ceramic-coating-glasgow-is-it-worth-it" className="text-primary hover:text-white transition-colors">
+              <Link href="/journal/ceramic-coating-glasgow-is-it-worth-it" className="text-primary hover:text-white transition-colors">
                 Ceramic Coating Glasgow: Is It Worth It? →
               </Link>
             </li>
             <li>
-              <Link to="/journal/valeting-vs-detailing-glasgow" className="text-primary hover:text-white transition-colors">
+              <Link href="/journal/valeting-vs-detailing-glasgow" className="text-primary hover:text-white transition-colors">
                 Valeting vs Detailing: What's the Difference? →
               </Link>
             </li>
             <li>
-              <Link to="/journal/glasgow-weather-destroys-car-paint" className="text-primary hover:text-white transition-colors">
+              <Link href="/journal/glasgow-weather-destroys-car-paint" className="text-primary hover:text-white transition-colors">
                 How Glasgow's Weather Destroys Your Car Paint →
               </Link>
             </li>
@@ -389,7 +381,7 @@ export function MachinePolishingGlasgow() {
               Call 0743 574 0502
             </a>
             <Link
-              to="/services/machine-polishing"
+              href="/services/machine-polishing"
               className="border border-white hover:border-primary text-white hover:text-primary px-8 py-4 font-bold tracking-widest text-xs uppercase inline-block transition-colors"
             >
               Machine Polishing Service

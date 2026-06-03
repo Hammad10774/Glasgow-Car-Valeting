@@ -1,6 +1,7 @@
+'use client';
 import { Phone, ChevronDown, Menu, X } from "lucide-react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,9 +9,9 @@ export function Header() {
   const services = [
     { name: "Ceramic Coating", href: "/services/ceramic-coating" },
     { name: "Machine Polishing", href: "/services/machine-polishing" },
-    { name: "Full Interior Valet", href: "/services/full-interior-valet" },
+    { name: "Full Valet", href: "/services/full-valet" },
     { name: "Paint Correction", href: "/services/paint-correction" },
-    { name: "Clay Bar Treatment", href: "/services/clay-bar-treatment" }
+    { name: "Interior Valet", href: "/services/interior-valet" }
   ];
 
   const areas = [
@@ -26,7 +27,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
-            <Link to="/" className="flex flex-col relative z-10">
+            <Link href="/" className="flex flex-col relative z-10">
               <span className="text-2xl font-heading italic tracking-widest text-primary">GLASGOW</span>
               <span className="text-xs font-sans tracking-[0.3em] uppercase opacity-60 -mt-1 text-white">Car Valeting</span>
             </Link>
@@ -42,7 +43,7 @@ export function Header() {
               <div className="absolute top-20 left-1/2 -translate-x-1/2 w-64 bg-[#111] border border-[var(--color-border-dark)] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 shadow-2xl">
                 <div className="p-2 flex flex-col">
                   {services.map((service, index) => (
-                    <Link key={index} to={service.href} className="text-gray-300 hover:text-primary hover:bg-[#1a1a1a] px-4 py-3 text-sm transition-colors border-b border-[var(--color-border-dark)] last:border-0">
+                    <Link key={index} href={service.href} className="text-gray-300 hover:text-primary hover:bg-[#1a1a1a] px-4 py-3 text-sm transition-colors border-b border-[var(--color-border-dark)] last:border-0">
                       {service.name}
                     </Link>
                   ))}
@@ -58,7 +59,7 @@ export function Header() {
               <div className="absolute top-20 left-1/2 -translate-x-1/2 w-56 bg-[#111] border border-[var(--color-border-dark)] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 shadow-2xl">
                 <div className="p-2 flex flex-col">
                   {areas.map((area, index) => (
-                    <Link key={index} to={area.href} className="text-gray-300 hover:text-primary hover:bg-[#1a1a1a] px-4 py-3 text-sm transition-colors border-b border-[var(--color-border-dark)] last:border-0">
+                    <Link key={index} href={area.href} className="text-gray-300 hover:text-primary hover:bg-[#1a1a1a] px-4 py-3 text-sm transition-colors border-b border-[var(--color-border-dark)] last:border-0">
                       {area.name}
                     </Link>
                   ))}
@@ -66,7 +67,7 @@ export function Header() {
               </div>
             </div>
 
-            <Link to="/journal" className="text-white text-xs font-bold tracking-widest uppercase hover:text-primary transition-colors">
+            <Link href="/journal" className="text-white text-xs font-bold tracking-widest uppercase hover:text-primary transition-colors">
               Journal
             </Link>
           </div>
@@ -104,7 +105,7 @@ export function Header() {
             <div className="flex flex-col gap-4">
               <span className="text-primary text-[10px] tracking-widest uppercase font-bold">Services</span>
               {services.map((service, index) => (
-                <Link key={index} to={service.href} className="text-white text-lg pl-4 border-l-2 border-[var(--color-border-dark)]" onClick={() => setIsMenuOpen(false)}>
+                <Link key={index} href={service.href} className="text-white text-lg pl-4 border-l-2 border-[var(--color-border-dark)]" onClick={() => setIsMenuOpen(false)}>
                   {service.name}
                 </Link>
               ))}
@@ -113,13 +114,13 @@ export function Header() {
             <div className="flex flex-col gap-4 mt-4">
               <span className="text-primary text-[10px] tracking-widest uppercase font-bold">Areas Covered</span>
               {areas.map((area, index) => (
-                <Link key={index} to={area.href} className="text-white text-lg pl-4 border-l-2 border-[var(--color-border-dark)]" onClick={() => setIsMenuOpen(false)}>
+                <Link key={index} href={area.href} className="text-white text-lg pl-4 border-l-2 border-[var(--color-border-dark)]" onClick={() => setIsMenuOpen(false)}>
                   {area.name}
                 </Link>
               ))}
             </div>
 
-            <Link to="/journal" className="text-white text-xl font-bold mt-4" onClick={() => setIsMenuOpen(false)}>
+            <Link href="/journal" className="text-white text-xl font-bold mt-4" onClick={() => setIsMenuOpen(false)}>
               Auto Care Journal
             </Link>
 

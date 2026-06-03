@@ -1,3 +1,4 @@
+'use client';
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import { useState } from "react";

@@ -1,8 +1,8 @@
-import { useParams, Link } from 'react-router-dom';
-import { SEOHead } from '../components/SEOHead';
-import { Reviews } from '../components/Reviews';
+import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
+import Link from 'next/link';
+import { Reviews } from '../../../src/components/Reviews';
 
-/* ─── SEO meta ─────────────────────────────────────────────── */
 const locationMeta: Record<string, { title: string; description: string }> = {
   'west-end-car-valeting': {
     title: 'Car Valeting West End Glasgow | Mobile Service at Your Door | Glasgow Car Valeting',
@@ -243,26 +243,57 @@ Clarkston's cold winters mirror the rest of the greater Glasgow area. The roads 
 };
 
 /* ─── Component ─────────────────────────────────────────────── */
-export function LocationPage() {
-  const { locationId } = useParams<{ locationId: string }>();
-  const meta = locationId ? locationMeta[locationId] : null;
-  const content = locationId ? locationContent[locationId] : null;
-  const faqs = locationId ? locationFaqs[locationId] : null;
 
-  const rawLocation = locationId?.replace('-car-valeting', '') || 'Glasgow';
-  const locationName = rawLocation
-    .split('-')
-    .map(w => w.charAt(0).toUpperCase() + w.slice(1))
-    .join(' ');
+const LOCATION_IDS = [
+  'west-end-car-valeting',
+  'bearsden-car-valeting',
+  'newton-mearns-car-valeting',
+  'southside-car-valeting',
+  'milngavie-car-valeting',
+  'glasgow-south-car-valeting',
+  'clarkston-car-valeting',
+];
 
-  const title = meta?.title || `Car Valeting ${locationName} | Mobile Service | Glasgow Car Valeting`;
-  const description = meta?.description || `Premium mobile car valeting in ${locationName}. We come to your door, fully insured. Call 0743 574 0502.`;
+export async function generateStaticParams() {
+  return LOCATION_IDS.map((locationId) => ({ locationId }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locationId: string }>;
+}): Promise<Metadata> {
+  const { locationId } = await params;
+  const meta = locationMeta[locationId];
+  const rawLocation = locationId.replace('-car-valeting', '');
+  const locationName = rawLocation.split('-').map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+  return {
+    title: meta?.title || `Car Valeting ${locationName} | Mobile Service | Glasgow Car Valeting`,
+    description: meta?.description || `Premium mobile car valeting in ${locationName}. We come to your door, fully insured. Call 0743 574 0502.`,
+    alternates: { canonical: `/areas/${locationId}` },
+  };
+}
+
+export default async function AreaPage({
+  params,
+}: {
+  params: Promise<{ locationId: string }>;
+}) {
+  const { locationId } = await params;
+  const meta = locationMeta[locationId];
+  const content = locationContent[locationId];
+  const faqs = locationFaqs[locationId];
+
+  if (!content) notFound();
+
+  const rawLocation = locationId.replace('-car-valeting', '');
+  const locationName = rawLocation.split('-').map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
 
   const faqSchema = faqs
     ? {
         '@context': 'https://schema.org',
         '@type': 'FAQPage',
-        mainEntity: faqs.map(f => ({
+        mainEntity: faqs.map((f) => ({
           '@type': 'Question',
           name: f.q,
           acceptedAnswer: { '@type': 'Answer', text: f.a },
@@ -270,24 +301,8 @@ export function LocationPage() {
       }
     : null;
 
-  if (!content) {
-    return (
-      <main className="pt-32 pb-24 bg-background-dark min-h-screen text-white">
-        <div className="max-w-3xl mx-auto px-6 lg:px-12 text-center">
-          <h1 className="text-4xl font-bold mb-4">Area Not Found</h1>
-          <p className="text-gray-400 mb-8">Browse all areas we cover.</p>
-          <Link to="/" className="bg-primary hover:bg-white text-black px-8 py-4 font-bold tracking-widest text-xs uppercase inline-block transition-colors">
-            Back to Home
-          </Link>
-        </div>
-      </main>
-    );
-  }
-
   return (
-    <main className="bg-background-dark text-white">
-      <SEOHead title={title} description={description} canonical={`/areas/${locationId}`} />
-
+    <main className="min-h-screen bg-background-dark text-white">
       {faqSchema && (
         <script
           type="application/ld+json"
@@ -296,11 +311,13 @@ export function LocationPage() {
       )}
 
       {/* Hero */}
-      <section className="pt-32 pb-16 border-b border-white/10 text-center">
+      <section className="pt-32 pb-16 bg-background-dark text-center border-b border-white/10">
         <div className="max-w-4xl mx-auto px-6 lg:px-12">
-          <span className="text-primary text-xs uppercase tracking-widest mb-4 block">Mobile Car Valeting Glasgow</span>
-          <h1 className="text-4xl lg:text-5xl font-bold mb-6">Mobile Car Valeting in {locationName}</h1>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">{description}</p>
+          <span className="text-primary text-xs uppercase tracking-widest mb-4 block">Mobile Car Valeting</span>
+          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">Car Valeting {locationName}</h1>
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
+            {meta?.description || `Professional mobile car valeting in ${locationName}. We come to you.`}
+          </p>
           <a
             href="tel:07435740502"
             className="bg-primary hover:bg-white text-black px-8 py-4 font-bold tracking-widest text-xs uppercase inline-block transition-colors"
@@ -319,23 +336,24 @@ export function LocationPage() {
         </div>
       </section>
 
-      {/* Areas served */}
-      <section className="py-16 bg-zinc-900 border-b border-white/10">
+      {/* Areas served chips */}
+      <section className="py-12 bg-zinc-900 border-b border-white/10">
         <div className="max-w-4xl mx-auto px-6 lg:px-12">
-          <h2 className="text-3xl font-bold text-white mb-6">Areas we cover in {locationName}</h2>
+          <h2 className="text-2xl font-bold text-white mb-6">Areas we cover</h2>
           <div className="flex flex-wrap gap-3">
             {content.areasServed.map((area, i) => (
-              <span key={i} className="border border-white/20 text-gray-300 px-4 py-2 text-sm">{area}</span>
+              <span key={i} className="bg-neutral-800 text-gray-300 px-4 py-2 text-sm rounded-sm border border-neutral-700">
+                {area}
+              </span>
             ))}
           </div>
-          <p className="text-gray-400 mt-6">Not sure if we cover your postcode? Call <a href="tel:07435740502" className="text-primary hover:underline">0743 574 0502</a> and we will confirm immediately.</p>
         </div>
       </section>
 
       {/* Local context */}
       <section className="py-16 border-b border-white/10">
         <div className="max-w-4xl mx-auto px-6 lg:px-12">
-          <h2 className="text-3xl font-bold text-white mb-6">Paint conditions in {locationName}</h2>
+          <h2 className="text-3xl font-bold text-white mb-6">Paint challenges in {locationName}</h2>
           {content.localContext.split('\n\n').map((para, i) => (
             <p key={i} className="text-gray-300 text-lg leading-relaxed mb-4">{para.trim()}</p>
           ))}
@@ -345,33 +363,38 @@ export function LocationPage() {
       {/* Services */}
       <section className="py-16 bg-zinc-900 border-b border-white/10">
         <div className="max-w-4xl mx-auto px-6 lg:px-12">
-          <h2 className="text-3xl font-bold text-white mb-8">Services available in {locationName}</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {content.services.map((service, i) => (
+          <h2 className="text-3xl font-bold text-white mb-8">Our services in {locationName}</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              { href: '/services/ceramic-coating', name: 'Ceramic Coating', desc: 'Long-term paint protection, 2 to 5 years' },
+              { href: '/services/machine-polishing', name: 'Machine Polishing', desc: 'Remove swirls, scratches and oxidation' },
+              { href: '/services/paint-correction', name: 'Paint Correction', desc: 'Multi-stage correction for heavy defects' },
+              { href: '/services/full-valet', name: 'Full Valet', desc: 'Complete interior and exterior clean' },
+              { href: '/services/interior-valet', name: 'Interior Valet', desc: 'Deep clean and shampoo of all interior surfaces' },
+            ].map(({ href, name, desc }) => (
               <Link
-                key={i}
-                to={service.link}
-                className="border border-white/10 hover:border-primary p-6 transition-colors group"
+                key={href}
+                href={href}
+                className="block p-5 border border-neutral-700 hover:border-primary transition-colors"
               >
-                <h3 className="text-white font-bold text-lg mb-2 group-hover:text-primary transition-colors">{service.name}</h3>
-                <p className="text-gray-400 text-sm leading-relaxed">{service.desc}</p>
+                <p className="font-bold text-white mb-1">{name}</p>
+                <p className="text-sm text-gray-400">{desc}</p>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Reviews */}
       <Reviews />
 
       {/* FAQs */}
       {faqs && (
         <section className="py-16 border-b border-white/10">
           <div className="max-w-4xl mx-auto px-6 lg:px-12">
-            <h2 className="text-3xl font-bold text-white mb-10">Questions about car valeting in {locationName}</h2>
+            <h2 className="text-3xl font-bold text-white mb-10">Frequently asked questions</h2>
             <div className="space-y-8">
               {faqs.map((faq, i) => (
-                <div key={i} className="border-b border-white/10 pb-8 last:border-0 last:pb-0">
+                <div key={i} className="border-b border-white/10 pb-8 last:border-0">
                   <h3 className="text-white font-semibold text-lg mb-3">{faq.q}</h3>
                   <p className="text-gray-300 leading-relaxed">{faq.a}</p>
                 </div>
@@ -385,21 +408,13 @@ export function LocationPage() {
       <section className="py-20 bg-zinc-900 text-center">
         <div className="max-w-2xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-white mb-4">Book your valet in {locationName}</h2>
-          <p className="text-gray-300 mb-8">We come to your door across {locationName} and the greater Glasgow area. Fully mobile, fully insured. No garage drop-off needed.</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="tel:07435740502"
-              className="bg-primary hover:bg-white text-black px-8 py-4 font-bold tracking-widest text-xs uppercase transition-colors"
-            >
-              Call 0743 574 0502
-            </a>
-            <Link
-              to="/journal"
-              className="border border-white/30 hover:border-white text-white px-8 py-4 font-bold tracking-widest text-xs uppercase transition-colors"
-            >
-              Read Our Guides
-            </Link>
-          </div>
+          <p className="text-gray-300 mb-8">We come to your door. No drop-off required. Fully insured, fully mobile.</p>
+          <a
+            href="tel:07435740502"
+            className="bg-primary hover:bg-white text-black px-8 py-4 font-bold tracking-widest text-xs uppercase inline-block transition-colors"
+          >
+            Call 0743 574 0502
+          </a>
         </div>
       </section>
     </main>

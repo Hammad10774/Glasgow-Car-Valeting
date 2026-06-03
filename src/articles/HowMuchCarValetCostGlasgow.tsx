@@ -1,19 +1,11 @@
-import { Link } from 'react-router-dom';
-import { SEOHead } from '../components/SEOHead';
+import Link from 'next/link';
 
 export function HowMuchCarValetCostGlasgow() {
   return (
     <main className="pt-32 pb-24 bg-background-dark min-h-screen text-white">
-      <SEOHead
-        title="How Much Does a Car Valet Cost in Glasgow? (Honest 2026 Pricing Guide) | Glasgow Car Valeting"
-        description="Most car valet websites in Glasgow hide their prices. We don't. Full 2026 pricing guide — mini valet, full valet, detailing and ceramic coating prices, by vehicle size."
-        canonical="/journal/how-much-does-a-car-valet-cost-glasgow"
-        articleType={true}
-        articleDate="2026-05-09"
-      />
-      <div className="max-w-3xl mx-auto px-6 lg:px-12">
+<div className="max-w-3xl mx-auto px-6 lg:px-12">
 
-        <Link to="/journal" className="text-primary text-xs uppercase tracking-widest mb-8 inline-block hover:text-white transition-colors">
+        <Link href="/journal" className="text-primary text-xs uppercase tracking-widest mb-8 inline-block hover:text-white transition-colors">
           ← Back to Journal
         </Link>
 
@@ -238,7 +230,7 @@ export function HowMuchCarValetCostGlasgow() {
         </p>
         <p className="text-gray-300 leading-relaxed mb-6">
           Want the full breakdown on whether ceramic coating is right for your car?{' '}
-          <Link to="/journal/ceramic-coating-glasgow-is-it-worth-it" className="text-primary hover:text-white transition-colors underline underline-offset-4">
+          <Link href="/journal/ceramic-coating-glasgow-is-it-worth-it" className="text-primary hover:text-white transition-colors underline underline-offset-4">
             Read our complete ceramic coating guide here.
           </Link>
         </p>
@@ -334,7 +326,7 @@ export function HowMuchCarValetCostGlasgow() {
               Call 0743 574 0502
             </a>
             <Link
-              to="/journal/ceramic-coating-glasgow-is-it-worth-it"
+              href="/journal/ceramic-coating-glasgow-is-it-worth-it"
               className="border border-white hover:border-primary text-white hover:text-primary px-8 py-4 font-bold tracking-widest text-xs uppercase inline-block transition-colors"
             >
               Ceramic Coating Guide

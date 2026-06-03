@@ -1,3 +1,4 @@
+'use client';
 import { ChevronRight, Phone } from "lucide-react";
 import { motion } from "motion/react";
 

@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom';
-import { SEOHead } from '../components/SEOHead';
+import Link from 'next/link';
 
 export function SportsCarsDetailingGlasgow() {
   const faqSchema = {
@@ -51,19 +50,7 @@ export function SportsCarsDetailingGlasgow() {
 
   return (
     <>
-      <SEOHead
-        title="Why Sports Car Owners in Glasgow Choose Mobile Detailing | Glasgow Car Valeting"
-        description="Sports car owners in Glasgow have specific reasons for choosing mobile detailing over a studio. Paint quality, security, low mileage cars and road conditions all factor in. Here is why."
-        canonical="/journal/sports-car-detailing-glasgow"
-        articleType={true}
-        articleDate="2026-05-28"
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-
-      <article className="pt-32 pb-24 bg-background-dark text-white">
+<article className="pt-32 pb-24 bg-background-dark text-white">
         <div className="max-w-3xl mx-auto px-6 lg:px-12">
 
           <div className="mb-12">
@@ -147,9 +134,9 @@ export function SportsCarsDetailingGlasgow() {
             <div className="bg-zinc-900 border border-white/10 p-6 mt-12">
               <h3 className="text-white font-bold text-lg mb-4">Related guides</h3>
               <ul className="space-y-2">
-                <li><Link to="/journal/ceramic-coating-glasgow-is-it-worth-it" className="text-primary hover:underline">Ceramic Coating Glasgow: Is It Worth It?</Link></li>
-                <li><Link to="/journal/paint-correction-glasgow" className="text-primary hover:underline">Paint Correction Glasgow: Full Guide</Link></li>
-                <li><Link to="/journal/how-long-does-ceramic-coating-last" className="text-primary hover:underline">How Long Does Ceramic Coating Last?</Link></li>
+                <li><Link href="/journal/ceramic-coating-glasgow-is-it-worth-it" className="text-primary hover:underline">Ceramic Coating Glasgow: Is It Worth It?</Link></li>
+                <li><Link href="/journal/paint-correction-glasgow" className="text-primary hover:underline">Paint Correction Glasgow: Full Guide</Link></li>
+                <li><Link href="/journal/how-long-does-ceramic-coating-last" className="text-primary hover:underline">How Long Does Ceramic Coating Last?</Link></li>
               </ul>
             </div>
 
@@ -194,7 +181,7 @@ export function SportsCarsDetailingGlasgow() {
               <a href="tel:07435740502" className="bg-primary hover:bg-white text-black px-8 py-4 font-bold tracking-widest text-xs uppercase transition-colors">
                 Call 0743 574 0502
               </a>
-              <Link to="/services/ceramic-coating" className="border border-white/30 hover:border-white text-white px-8 py-4 font-bold tracking-widest text-xs uppercase transition-colors">
+              <Link href="/services/ceramic-coating" className="border border-white/30 hover:border-white text-white px-8 py-4 font-bold tracking-widest text-xs uppercase transition-colors">
                 Ceramic Coating Service
               </Link>
             </div>

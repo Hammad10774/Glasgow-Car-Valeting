@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom';
-import { SEOHead } from '../components/SEOHead';
+import Link from 'next/link';
 
 export function InteriorValetVsMiniValet() {
   const faqSchema = {
@@ -51,19 +50,7 @@ export function InteriorValetVsMiniValet() {
 
   return (
     <>
-      <SEOHead
-        title="Full Interior Valet vs Mini Valet: Which Does Your Car Actually Need? | Glasgow Car Valeting"
-        description="A mini valet is a tidy-up. A full interior valet is a deep clean. Here is the honest difference, what each includes, and how to decide which your car needs in Glasgow."
-        canonical="/journal/interior-valet-vs-mini-valet-glasgow"
-        articleType={true}
-        articleDate="2026-05-24"
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-
-      <article className="pt-32 pb-24 bg-background-dark text-white">
+<article className="pt-32 pb-24 bg-background-dark text-white">
         <div className="max-w-3xl mx-auto px-6 lg:px-12">
 
           <div className="mb-12">
@@ -181,9 +168,9 @@ export function InteriorValetVsMiniValet() {
             <div className="bg-zinc-900 border border-white/10 p-6 mt-12">
               <h3 className="text-white font-bold text-lg mb-4">Related guides</h3>
               <ul className="space-y-2">
-                <li><Link to="/journal/how-much-does-a-car-valet-cost-glasgow" className="text-primary hover:underline">How Much Does a Car Valet Cost in Glasgow?</Link></li>
-                <li><Link to="/journal/valeting-vs-detailing-glasgow" className="text-primary hover:underline">What is the Difference Between Valeting and Detailing?</Link></li>
-                <li><Link to="/journal/glasgow-weather-destroys-car-paint" className="text-primary hover:underline">How Glasgow's Weather Destroys Car Paint</Link></li>
+                <li><Link href="/journal/how-much-does-a-car-valet-cost-glasgow" className="text-primary hover:underline">How Much Does a Car Valet Cost in Glasgow?</Link></li>
+                <li><Link href="/journal/valeting-vs-detailing-glasgow" className="text-primary hover:underline">What is the Difference Between Valeting and Detailing?</Link></li>
+                <li><Link href="/journal/glasgow-weather-destroys-car-paint" className="text-primary hover:underline">How Glasgow's Weather Destroys Car Paint</Link></li>
               </ul>
             </div>
 
@@ -228,7 +215,7 @@ export function InteriorValetVsMiniValet() {
               <a href="tel:07435740502" className="bg-primary hover:bg-white text-black px-8 py-4 font-bold tracking-widest text-xs uppercase transition-colors">
                 Call 0743 574 0502
               </a>
-              <Link to="/services/interior-valet" className="border border-white/30 hover:border-white text-white px-8 py-4 font-bold tracking-widest text-xs uppercase transition-colors">
+              <Link href="/services/interior-valet" className="border border-white/30 hover:border-white text-white px-8 py-4 font-bold tracking-widest text-xs uppercase transition-colors">
                 Interior Valet Service
               </Link>
             </div>
