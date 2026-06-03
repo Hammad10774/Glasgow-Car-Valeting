@@ -24,6 +24,14 @@ const locationMeta: Record<string, { title: string; description: string }> = {
     title: 'Car Detailing Milngavie | Premium Mobile Valeting | Glasgow Car Valeting',
     description: 'Expert mobile car detailing and valeting in Milngavie. Ceramic coating, machine polishing, full valet, all delivered to your door. Fully insured. Call 0743 574 0502.',
   },
+  'glasgow-south-car-valeting': {
+    title: 'Car Valeting Glasgow South | Mobile Detailing Service | Glasgow Car Valeting',
+    description: 'Premium mobile car valeting across Glasgow South. Serving Giffnock, Clarkston, Busby, Thornliebank and East Renfrewshire. We come to your door. Call 0743 574 0502.',
+  },
+  'clarkston-car-valeting': {
+    title: 'Car Valeting Clarkston | Premium Mobile Detailing | Glasgow Car Valeting',
+    description: 'Professional mobile car valeting and detailing in Clarkston. We come to your driveway. Ceramic coating, machine polishing, full valet. Fully insured. Call 0743 574 0502.',
+  },
 };
 
 /* ─── FAQs per location ─────────────────────────────────────── */
@@ -62,6 +70,20 @@ const locationFaqs: Record<string, { q: string; a: string }[]> = {
     { q: 'What premium detailing services do you offer in Milngavie?', a: 'We offer our full range of premium services in Milngavie including professional ceramic coating rated for 2 to 5 years, multi-stage paint correction, machine polishing for swirl removal, full valeting and deep interior cleaning. Paint correction followed by ceramic coating is a popular combination among Milngavie owners of prestige vehicles who want showroom-level results maintained at their door.' },
     { q: 'How much does a full valet cost in Milngavie?', a: 'Our pricing in Milngavie is the same as our standard pricing with no travel surcharge. A full valet starts from £100 for small cars, £120 for standard family cars and £180+ for large SUVs and 4x4s. An interior-only valet starts from £60. Ceramic coating starts from £250. All prices are confirmed in a free quote before any work begins.' },
     { q: 'Can you prepare a car for sale in Milngavie?', a: 'Yes. Pre-sale preparation is a common request in Milngavie. A well-presented car sells faster and commands a higher price. Our pre-sale valet package combines a full exterior and interior valet with a machine polish to remove swirl marks and restore paint gloss. For higher-value vehicles, we can add a ceramic coating that transfers to the new owner as a selling point. We will assess the car and recommend the best preparation package for the price point you are targeting.' },
+  ],
+  'glasgow-south-car-valeting': [
+    { q: 'Do you cover Glasgow South for mobile car valeting?', a: 'Yes. We cover the full Glasgow South area including Giffnock, Clarkston, Busby, Thornliebank, Williamwood, Stamperland and surrounding East Renfrewshire postcodes. We come to your home driveway and carry out all services at your location. No travel charge applies across Glasgow South.' },
+    { q: 'What is the most requested car detailing service in Glasgow South?', a: 'Ceramic coating and machine polishing are our most requested services across Glasgow South. The area has a high proportion of premium vehicles, and the combination of residential tree coverage, motorway fallout from the M77 and the damp climate makes paint protection a priority for owners who want to maintain their vehicle in good condition. Ceramic coating in particular is in high demand from BMW, Audi and Range Rover owners across Giffnock and Clarkston.' },
+    { q: 'Why do Glasgow South cars need paint protection?', a: 'Glasgow South sits alongside the M77, which generates significant brake dust and industrial fallout that bonds to paintwork and alloy wheels. Residential streets throughout Giffnock and Clarkston have established tree coverage that produces sap and organic fallout through the warmer months. Combined with the standard Glasgow winter of road salt from October through March, Glasgow South paintwork takes consistent punishment without proper protection.' },
+    { q: 'How much does mobile car valeting cost in Glasgow South?', a: 'Our pricing in Glasgow South is the same as our standard pricing with no travel surcharge. A full interior valet starts from £60. A full valet starts from £100. Machine polishing starts from £150. Ceramic coating starts from £250. All prices confirmed in a free quote before any work begins.' },
+    { q: 'Can you do ceramic coating in Giffnock or Thornliebank?', a: 'Yes. We carry out ceramic coating applications across Glasgow South including Giffnock, Thornliebank, Clarkston, Busby and surrounding areas. Most Glasgow South properties have driveways which gives us ideal conditions for a full prep and coating application. We bring all equipment and the car does not need to go anywhere.' },
+  ],
+  'clarkston-car-valeting': [
+    { q: 'Do you cover Clarkston for mobile car valeting?', a: 'Yes. Clarkston is a core part of our Glasgow South service area. We cover Clarkston, Stamperland, Williamwood, Busby and surrounding East Renfrewshire postcodes. We come to your home driveway with all equipment and products and carry out the full service at your location.' },
+    { q: 'What makes Clarkston cars particularly susceptible to paint damage?', a: 'Clarkston sits in a belt of affluent East Renfrewshire suburbs with significant tree coverage and proximity to the M77 and surrounding arterial roads. Tree sap from established residential gardens and street trees is a persistent problem on driveways from spring through autumn. The roads connecting Clarkston to Glasgow also produce stone chip exposure on motorway-adjacent routes. Clarkston drivers with premium vehicles tend to prioritise paint protection for exactly these reasons.' },
+    { q: 'What car detailing services do you offer in Clarkston?', a: 'We offer the full range in Clarkston: ceramic coating, machine polishing, paint correction, full valet and interior valet. Paint correction followed by ceramic coating is the most popular combination among Clarkston owners of prestige vehicles, providing permanent defect removal followed by 2 to 5 years of protection. All services are carried out at your home with no travel charge.' },
+    { q: 'How much does car valeting cost in Clarkston?', a: 'Our Clarkston pricing matches our standard rates. Interior valet from £60. Full valet from £100. Machine polishing from £150. Ceramic coating from £250. All confirmed in a free quote based on your vehicle size and condition before any work starts.' },
+    { q: 'Can you prepare a car for sale in Clarkston?', a: 'Yes. Pre-sale preparation is popular among Clarkston owners selling premium vehicles. A full valet combined with machine polishing to remove swirl marks from dark paint, followed by a light sealant, is the standard pre-sale package. For higher-value vehicles we also offer a ceramic coating that transfers to the new owner as an additional selling point. We quote the most appropriate package for the vehicle and asking price.' },
   ],
 };
 
@@ -178,28 +200,6 @@ The roads connecting Milngavie to the rest of Glasgow, the A81, A810 and B8050, 
       { name: 'Interior Valet', desc: 'Deep interior clean with seat shampoo and carpet extraction.', link: '/services/interior-valet' },
     ],
   },
-  'glasgow-south-car-valeting': {
-    title: 'Car Valeting Glasgow South | Mobile Detailing Service | Glasgow Car Valeting',
-    description: 'Premium mobile car valeting across Glasgow South. Serving Giffnock, Clarkston, Busby, Thornliebank and East Renfrewshire. We come to your door. Call 0743 574 0502.',
-  },
-  'clarkston-car-valeting': {
-    title: 'Car Valeting Clarkston | Premium Mobile Detailing | Glasgow Car Valeting',
-    description: 'Professional mobile car valeting and detailing in Clarkston. We come to your driveway. Ceramic coating, machine polishing, full valet. Fully insured. Call 0743 574 0502.',
-  },
-  'glasgow-south-car-valeting': [
-    { q: 'Do you cover Glasgow South for mobile car valeting?', a: 'Yes. We cover the full Glasgow South area including Giffnock, Clarkston, Busby, Thornliebank, Williamwood, Stamperland and surrounding East Renfrewshire postcodes. We come to your home driveway and carry out all services at your location. No travel charge applies across Glasgow South.' },
-    { q: 'What is the most requested car detailing service in Glasgow South?', a: 'Ceramic coating and machine polishing are our most requested services across Glasgow South. The area has a high proportion of premium vehicles, and the combination of residential tree coverage, motorway fallout from the M77 and the damp climate makes paint protection a priority for owners who want to maintain their vehicle in good condition. Ceramic coating in particular is in high demand from BMW, Audi and Range Rover owners across Giffnock and Clarkston.' },
-    { q: 'Why do Glasgow South cars need paint protection?', a: 'Glasgow South sits alongside the M77, which generates significant brake dust and industrial fallout that bonds to paintwork and alloy wheels. Residential streets throughout Giffnock and Clarkston have established tree coverage that produces sap and organic fallout through the warmer months. Combined with the standard Glasgow winter of road salt from October through March, Glasgow South paintwork takes consistent punishment without proper protection.' },
-    { q: 'How much does mobile car valeting cost in Glasgow South?', a: 'Our pricing in Glasgow South is the same as our standard pricing with no travel surcharge. A full interior valet starts from £60. A full valet starts from £100. Machine polishing starts from £150. Ceramic coating starts from £250. All prices confirmed in a free quote before any work begins.' },
-    { q: 'Can you do ceramic coating in Giffnock or Thornliebank?', a: 'Yes. We carry out ceramic coating applications across Glasgow South including Giffnock, Thornliebank, Clarkston, Busby and surrounding areas. Most Glasgow South properties have driveways which gives us ideal conditions for a full prep and coating application. We bring all equipment and the car does not need to go anywhere.' },
-  ],
-  'clarkston-car-valeting': [
-    { q: 'Do you cover Clarkston for mobile car valeting?', a: 'Yes. Clarkston is a core part of our Glasgow South service area. We cover Clarkston, Stamperland, Williamwood, Busby and surrounding East Renfrewshire postcodes. We come to your home driveway with all equipment and products and carry out the full service at your location.' },
-    { q: 'What makes Clarkston cars particularly susceptible to paint damage?', a: 'Clarkston sits in a belt of affluent East Renfrewshire suburbs with significant tree coverage and proximity to the M77 and surrounding arterial roads. Tree sap from established residential gardens and street trees is a persistent problem on driveways from spring through autumn. The roads connecting Clarkston to Glasgow also produce stone chip exposure on motorway-adjacent routes. Clarkston drivers with premium vehicles tend to prioritise paint protection for exactly these reasons.' },
-    { q: 'What car detailing services do you offer in Clarkston?', a: 'We offer the full range in Clarkston: ceramic coating, machine polishing, paint correction, full valet and interior valet. Paint correction followed by ceramic coating is the most popular combination among Clarkston owners of prestige vehicles, providing permanent defect removal followed by 2 to 5 years of protection. All services are carried out at your home with no travel charge.' },
-    { q: 'How much does car valeting cost in Clarkston?', a: 'Our Clarkston pricing matches our standard rates. Interior valet from £60. Full valet from £100. Machine polishing from £150. Ceramic coating from £250. All confirmed in a free quote based on your vehicle size and condition before any work starts.' },
-    { q: 'Can you prepare a car for sale in Clarkston?', a: 'Yes. Pre-sale preparation is popular among Clarkston owners selling premium vehicles. A full valet combined with machine polishing to remove swirl marks from dark paint, followed by a light sealant, is the standard pre-sale package. For higher-value vehicles we also offer a ceramic coating that transfers to the new owner as an additional selling point. We quote the most appropriate package for the vehicle and asking price.' },
-  ],
   'glasgow-south-car-valeting': {
     intro: `Glasgow South covers a broad stretch of prosperous suburban and semi-rural communities running from the Southside boundary through East Renfrewshire. Giffnock, Clarkston, Busby, Thornliebank and Williamwood are among the most car-conscious communities in the greater Glasgow area. The proportion of premium and executive vehicles is high, the properties typically have driveway access, and the owners have expectations to match.
 
