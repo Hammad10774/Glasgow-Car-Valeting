@@ -3,7 +3,50 @@ import Link from 'next/link';
 export function HowLongDoesCeramicCoatingLast() {
   return (
     <main className="pt-32 pb-24 bg-background-dark min-h-screen text-white">
-<span className="text-xs text-gray-500 font-normal">Autoglym, Chemical Guys, etc.</span></td>
+      <div className="max-w-3xl mx-auto px-6 lg:px-12">
+
+        <Link href="/journal" className="text-primary text-xs uppercase tracking-widest mb-8 inline-block hover:text-white transition-colors">
+          ← Back to Journal
+        </Link>
+
+        <span className="text-primary text-xs uppercase tracking-widest mb-4 block">May 14, 2026 · 7 min read</span>
+
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+          How Long Does Ceramic Coating Last?
+        </h1>
+
+        <p className="text-xl text-gray-300 leading-relaxed mb-12 border-l-4 border-primary pl-6">
+          The short answer: 2 to 5 years on most cars, with professional-grade coatings at the higher end. The real answer depends on the product used, how the paint was prepared, and how the car is maintained afterwards. Here's what actually determines longevity.
+        </p>
+
+        {/* Intro */}
+        <p className="text-gray-300 leading-relaxed mb-6">
+          The question comes up in almost every ceramic coating enquiry. It's a fair one. A ceramic coating costs several hundred pounds. You want to know what you're getting for that money and how long before you need to do it again.
+        </p>
+        <p className="text-gray-300 leading-relaxed mb-6">
+          The honest answer is that "how long does ceramic coating last" doesn't have one number. A consumer spray-on ceramic from a car accessory shop might last six months. A professional-grade SiO2 coating applied after proper paint preparation lasts two to five years. The gap between those two outcomes is enormous, and it's almost entirely down to what was applied and how.
+        </p>
+
+        {/* Section 1 */}
+        <h2 className="text-2xl font-bold text-white mt-12 mb-4 border-l-4 border-primary pl-4">
+          The Honest Lifespan by Product Type
+        </h2>
+        <p className="text-gray-300 leading-relaxed mb-6">
+          Not all ceramic coatings are the same product. The term covers everything from diluted spray-on sealants sold at petrol stations to professional-grade SiO2 compounds that bond chemically to the clear coat. The lifespan gap between them is wider than most people expect.
+        </p>
+
+        <div className="bg-[#111] border border-[var(--color-border-dark)] rounded-lg overflow-hidden mb-8">
+          <table className="w-full text-sm text-left">
+            <thead>
+              <tr className="border-b border-[var(--color-border-dark)]">
+                <th className="p-4 text-primary uppercase tracking-widest text-xs font-bold">Product Type</th>
+                <th className="p-4 text-white uppercase tracking-widest text-xs font-bold">Typical Lifespan</th>
+                <th className="p-4 text-gray-400 uppercase tracking-widest text-xs font-bold">Notes</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-300 divide-y divide-[var(--color-border-dark)]">
+              <tr>
+                <td className="p-4 font-medium text-white">Consumer spray ceramic<br/><span className="text-xs text-gray-500 font-normal">Autoglym, Chemical Guys, etc.</span></td>
                 <td className="p-4 font-bold text-primary">3–6 months</td>
                 <td className="p-4 text-gray-400 text-xs">Low SiO2 concentration. Sits on top of paint rather than bonding to it. Washes off gradually.</td>
               </tr>

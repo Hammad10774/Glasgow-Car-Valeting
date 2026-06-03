@@ -3,7 +3,126 @@ import Link from 'next/link';
 export function PaintCorrectionGlasgow() {
   return (
     <main className="pt-32 pb-24 bg-background-dark min-h-screen text-white">
-<span className="text-xs text-gray-500 font-normal">(1 stage)</span></td>
+      <div className="max-w-3xl mx-auto px-6 lg:px-12">
+
+        <Link href="/journal" className="text-primary text-xs uppercase tracking-widest mb-8 inline-block hover:text-white transition-colors">
+          ← Back to Journal
+        </Link>
+
+        <span className="text-primary text-xs uppercase tracking-widest mb-4 block">May 13, 2026 · 8 min read</span>
+
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+          Paint Correction Glasgow: What It Is, What It Costs, and When Your Car Needs It
+        </h1>
+
+        <p className="text-xl text-gray-300 leading-relaxed mb-12 border-l-4 border-primary pl-6">
+          Paint correction is the process of removing paint defects permanently rather than hiding them. It covers everything from swirl removal to full multi-stage restoration on heavily damaged paintwork. This guide covers the process, the stages, realistic prices in Glasgow, and how to know whether your car needs it.
+        </p>
+
+        {/* Intro */}
+        <p className="text-gray-300 leading-relaxed mb-6">
+          Most car care products hide paint damage. Detailing sprays, glazes, and cheap waxes fill in scratches and swirl marks temporarily, making the paint look better for a few weeks until the product wears off. The damage underneath stays exactly where it was.
+        </p>
+        <p className="text-gray-300 leading-relaxed mb-6">
+          Paint correction removes the damage. The defects come out of the clear coat permanently. What you see after a correction session is what the paint actually looks like once the years of accumulated damage are gone.
+        </p>
+        <p className="text-gray-300 leading-relaxed mb-6">
+          It's the highest standard of paint restoration work available without respraying. For cars that have been washed at automated car washes, parked under trees, or simply had years of normal use in Glasgow's conditions, it's often the only way to get the paint back to what it should look like.
+        </p>
+
+        {/* Section 1 */}
+        <h2 className="text-2xl font-bold text-white mt-12 mb-4 border-l-4 border-primary pl-4">
+          What Is Paint Correction?
+        </h2>
+        <p className="text-gray-300 leading-relaxed mb-6">
+          Paint correction is a multi-stage machine polishing process that works through progressively finer compounds to remove defects from the clear coat layer of your car's paint. Each stage removes a microscopic amount of clear coat to level the surface, eliminating the scratches, swirl marks, and oxidation sitting in it.
+        </p>
+        <p className="text-gray-300 leading-relaxed mb-6">
+          The distinction between paint correction and a standard machine polish is depth of work. A single-stage machine polish handles light defects: mild swirl marks, minor water spots, and surface haze. Paint correction refers to multi-stage work on paint with moderate to severe defects, where one pass with a cutting compound isn't enough to achieve full correction.
+        </p>
+        <p className="text-gray-300 leading-relaxed mb-6">
+          A full two-stage paint correction removes 80 to 90 percent of paint defects. A three-stage correction, which involves wet sanding before polishing, can achieve 95 percent or better on paint with heavy scratching or severe oxidation. The remaining percentage covers defects too deep to polish out without removing an unsafe amount of clear coat.
+        </p>
+
+        {/* Section 2 — What it fixes */}
+        <h2 className="text-2xl font-bold text-white mt-12 mb-4 border-l-4 border-primary pl-4">
+          What Paint Correction Fixes
+        </h2>
+        <p className="text-gray-300 leading-relaxed mb-6">
+          Paint correction addresses defects that live within or on the clear coat. These are the most common ones we see on Glasgow cars:
+        </p>
+
+        <div className="bg-[#111] border border-[var(--color-border-dark)] rounded-lg p-6 mb-8">
+          <ul className="space-y-5 text-gray-300">
+            <li className="flex items-start gap-4">
+              <span className="text-primary font-bold text-lg mt-0.5 leading-none">01</span>
+              <div>
+                <strong className="text-white block mb-1">Heavy Swirl Marks</strong>
+                Years of automated car washes, dirty cloths, and improper washing technique leave dense circular scratch patterns across the entire car. Under sunlight or artificial light, the paint looks grey and webbed rather than deep and reflective. Paint correction removes them completely.
+              </div>
+            </li>
+            <li className="flex items-start gap-4">
+              <span className="text-primary font-bold text-lg mt-0.5 leading-none">02</span>
+              <div>
+                <strong className="text-white block mb-1">Deep Clear Coat Scratches</strong>
+                Scratches that a single-stage polish can't fully remove. These sit deeper in the clear coat and require a more aggressive cutting compound followed by a refining stage to restore gloss. As long as the scratch hasn't cut through to the base coat, paint correction can eliminate or dramatically reduce it.
+              </div>
+            </li>
+            <li className="flex items-start gap-4">
+              <span className="text-primary font-bold text-lg mt-0.5 leading-none">03</span>
+              <div>
+                <strong className="text-white block mb-1">Oxidation</strong>
+                The chalky, faded appearance on cars that have been exposed to UV without adequate protection. The top layer of clear coat degrades and loses its ability to reflect light. Paint correction cuts through the oxidised layer and exposes the undamaged paint underneath. On older cars, this can produce a transformation that looks like a respray.
+              </div>
+            </li>
+            <li className="flex items-start gap-4">
+              <span className="text-primary font-bold text-lg mt-0.5 leading-none">04</span>
+              <div>
+                <strong className="text-white block mb-1">Water Spot Etching</strong>
+                Mineral deposits from rain and tap water that bond to the clear coat and etch into it as they dry. Glasgow's rainfall keeps most cars exposed to this constantly. Light water spots polish out in one stage. Etched water spots that have been left for months require a more aggressive correction approach.
+              </div>
+            </li>
+            <li className="flex items-start gap-4">
+              <span className="text-primary font-bold text-lg mt-0.5 leading-none">05</span>
+              <div>
+                <strong className="text-white block mb-1">Bird Drop Etching</strong>
+                Bird droppings are acidic. Left on paint in warm weather, they etch into the clear coat within hours. The mark left behind after removing the dropping is a dull patch shaped like the original deposit. Correction polishes it out.
+              </div>
+            </li>
+            <li className="flex items-start gap-4">
+              <span className="text-primary font-bold text-lg mt-0.5 leading-none">06</span>
+              <div>
+                <strong className="text-white block mb-1">Hologram Marks / Buffer Trails</strong>
+                Swirling holographic marks left by previous machine polishing done incorrectly, typically with a rotary machine at the wrong speed or with an unsuitable compound. A proper multi-stage correction removes them.
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <p className="text-gray-300 leading-relaxed mb-6">
+          Paint correction won't fix scratches or chips that have cut through the clear coat and base coat down to the primer or bare metal. Those need touch-up paint or a body shop before any polishing work. If you're unsure whether a scratch is correctable, send us a photo before booking.
+        </p>
+
+        {/* Section 3 — Stages */}
+        <h2 className="text-2xl font-bold text-white mt-12 mb-4 border-l-4 border-primary pl-4">
+          The Three Stages of Paint Correction
+        </h2>
+        <p className="text-gray-300 leading-relaxed mb-6">
+          Not every car needs the same level of work. The right stage depends on the severity of the defects and the condition of the paint thickness.
+        </p>
+
+        <div className="bg-[#111] border border-[var(--color-border-dark)] rounded-lg overflow-hidden mb-8">
+          <table className="w-full text-sm text-left">
+            <thead>
+              <tr className="border-b border-[var(--color-border-dark)]">
+                <th className="p-4 text-primary uppercase tracking-widest text-xs font-bold">Stage</th>
+                <th className="p-4 text-white uppercase tracking-widest text-xs font-bold">Work Involved</th>
+                <th className="p-4 text-gray-400 uppercase tracking-widest text-xs font-bold">Defect Removal</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-300 divide-y divide-[var(--color-border-dark)]">
+              <tr>
+                <td className="p-4 font-medium text-white">Enhancement Polish<br/><span className="text-xs text-gray-500 font-normal">(1 stage)</span></td>
                 <td className="p-4">Single pass with a light cutting or finishing compound. Removes light swirls and surface haze.</td>
                 <td className="p-4 font-bold text-primary">50–70%</td>
               </tr>
