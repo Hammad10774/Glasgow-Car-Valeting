@@ -1,5 +1,5 @@
 'use client';
-import { motion, AnimatePresence } from "motion/react";
+import { motion, AnimatePresence, type Variants } from "motion/react";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import { useState } from "react";
 
@@ -89,7 +89,7 @@ export function Reviews() {
     })
   };
 
-  const textVariants = {
+  const textVariants: Variants = {
     initial: {
       y: 50,
       opacity: 0
@@ -97,12 +97,12 @@ export function Reviews() {
     animate: {
       y: 0,
       opacity: 1,
-      transition: { duration: 0.6, ease: "easeOut" }
+      transition: { duration: 0.6, ease: "easeOut" as const }
     },
     exit: {
       y: 50,
       opacity: 0,
-      transition: { duration: 0.6, ease: "easeIn" }
+      transition: { duration: 0.6, ease: "easeIn" as const }
     }
   };
 
