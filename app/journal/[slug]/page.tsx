@@ -11,6 +11,7 @@ import { MachinePolishingVsHandPolishing } from '../../../src/articles/MachinePo
 import { InteriorValetVsMiniValet } from '../../../src/articles/InteriorValetVsMiniValet';
 import { SportsCarsDetailingGlasgow } from '../../../src/articles/SportsCarsDetailingGlasgow';
 import { BMWM3PaintCorrectionBearsden } from '../../../src/articles/BMWM3PaintCorrectionBearsden';
+import { CarCleaningMistakesGlasgow } from '../../../src/articles/CarCleaningMistakesGlasgow';
 
 const articleRegistry: Record<
   string,
@@ -81,6 +82,12 @@ const articleRegistry: Record<
     title: 'BMW M3 Paint Correction in Bearsden: Before and After Case Study | Glasgow Car Valeting',
     description: 'A Bearsden BMW M3 Competition in Sapphire Black came to us with heavy swirl marks and two years of wash damage. Here is how the paint correction and ceramic coating transformed it.',
     date: '2026-06-03',
+  },
+  'car-cleaning-mistakes-glasgow': {
+    component: CarCleaningMistakesGlasgow,
+    title: 'The 5 Biggest Car Cleaning Mistakes Glasgow Drivers Make | Glasgow Car Valeting',
+    description: 'Most paint damage on cars in Glasgow is caused by the owner cleaning their own car. These five mistakes cause swirl marks, scratches, water spot etching, and stripped protection.',
+    date: '2026-06-07',
   },
 };
 
